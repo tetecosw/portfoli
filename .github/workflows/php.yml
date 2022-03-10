@@ -1,0 +1,1063 @@
+<html lang="en-US"><head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--
+		  Output the FSE styles that the header/footer relies on.
+
+		  Some of them may conflict with rules that the Classic theme applies to the content area. These are
+		  output first, so they can be overridden if needed.
+		-->
+		<style id="global-styles-for-classic-themes">
+			body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--darker-grey: #1c2024;--wp--preset--color--dark-grey: #23282d;--wp--preset--color--dark-strokes-grey: #2f363d;--wp--preset--color--light-grey: #d9d9d9;--wp--preset--color--beige: #e4ddd4;--wp--preset--color--beige-2: #d3ccc3;--wp--preset--color--blue-1: #3e58e1;--wp--preset--color--blue-2: #213fd4;--wp--preset--color--blue-3: #7b90ff;--wp--preset--color--blue-5: #2541D6;--wp--preset--color--off-white: #f8f3ec;--wp--preset--color--off-white-2: #eff2ff;--wp--preset--color--light-salmon: #ffe9de;--wp--preset--color--green: #72d1a7;--wp--preset--color--success-green: #00a32a;--wp--preset--color--coral-red: #f86368;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 14px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 20px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-size--tiny: 12px;--wp--preset--font-size--normal: 16px;--wp--preset--font-size--extra-large: 24px;--wp--preset--font-size--huge: 32px;--wp--preset--font-family--eb-garamond: 'EB Garamond', serif;--wp--preset--font-family--inter: 'Inter', sans-serif;--wp--custom--alignment--aligned-max-width: 50%;--wp--custom--alignment--edge-spacing: clamp( 24px, calc( 100vw / 18 ), 80px );--wp--custom--alignment--outside-edge-extra-spacing: 7vw;--wp--custom--button--color--background: var(--wp--preset--color--blue-1);--wp--custom--button--color--text: var(--wp--preset--color--white);--wp--custom--button--border--color: var(--wp--preset--color--blue-1);--wp--custom--button--border--radius: 2px;--wp--custom--button--border--style: solid;--wp--custom--button--border--width: 2px;--wp--custom--button--hover--color--background: var(--wp--preset--color--blue-2);--wp--custom--button--hover--color--text: var(--wp--preset--color--white);--wp--custom--button--hover--border--color: var(--wp--preset--color--blue-2);--wp--custom--button--active--color--background: var(--wp--preset--color--black);--wp--custom--button--active--color--text: var(--wp--preset--color--white);--wp--custom--button--active--border--color: var(--wp--preset--color--black);--wp--custom--button--focus--color--background: var(--wp--preset--color--dark-grey);--wp--custom--button--focus--color--text: var(--wp--preset--color--white);--wp--custom--button--focus--border--color: var(--wp--preset--color--dark-grey);--wp--custom--button--spacing--padding--top: 0.2em;--wp--custom--button--spacing--padding--bottom: var(--wp--custom--button--spacing--padding--top);--wp--custom--button--spacing--padding--left: 1em;--wp--custom--button--spacing--padding--right: var(--wp--custom--button--spacing--padding--left);--wp--custom--button--typography--font-size: var(--wp--preset--font-size--normal);--wp--custom--button--typography--font-weight: normal;--wp--custom--button--typography--line-height: 2;--wp--custom--code--typography--font-family: monospace;--wp--custom--form--padding: calc( 0.5 * var(--wp--custom--margin--horizontal) );--wp--custom--form--border--color: #EFEFEF;--wp--custom--form--border--radius: 0;--wp--custom--form--border--style: solid;--wp--custom--form--border--width: 2px;--wp--custom--form--checkbox--checked--content: "\2715";--wp--custom--form--checkbox--checked--font-size: 14px;--wp--custom--form--checkbox--checked--position--left: 3px;--wp--custom--form--checkbox--checked--position--top: 4px;--wp--custom--form--checkbox--checked--sizing--height: 12px;--wp--custom--form--checkbox--checked--sizing--width: 12px;--wp--custom--form--checkbox--unchecked--content: "";--wp--custom--form--checkbox--unchecked--position--left: 0;--wp--custom--form--checkbox--unchecked--position--top: 0.2em;--wp--custom--form--checkbox--unchecked--sizing--height: 16px;--wp--custom--form--checkbox--unchecked--sizing--width: 16px;--wp--custom--form--color--background: transparent;--wp--custom--form--color--box-shadow: none;--wp--custom--form--label--typography--font-size: var(--wp--preset--font-size--tiny);--wp--custom--gallery--caption--font-size: var(--wp--preset--font-size--small);--wp--custom--body--typography--line-height: 1.9;--wp--custom--heading--typography--font-family: var(--wp--preset--font-family--eb-garamond);--wp--custom--heading--typography--font-weight: 400;--wp--custom--heading--typography--line-height: 1.3;--wp--custom--h-1--breakpoint--mobile--typography--font-size: 70px;--wp--custom--h-1--breakpoint--mobile--typography--line-height: 1.1;--wp--custom--h-1--typography--font-size: 38px;--wp--custom--h-1--typography--line-height: var(--wp--custom--heading--typography--line-height);--wp--custom--h-2--breakpoint--mobile--typography--font-size: clamp(26px, 4vw, 50px);--wp--custom--h-2--typography--font-size: 26px;--wp--custom--h-2--typography--line-height: var(--wp--custom--heading--typography--line-height);--wp--custom--h-3--breakpoint--mobile--typography--font-size: clamp(26px, 4vw, 36px);--wp--custom--h-3--breakpoint--mobile--typography--line-height: 1.3;--wp--custom--h-3--typography--font-size: 26px;--wp--custom--h-3--typography--line-height: var(--wp--custom--heading--typography--line-height);--wp--custom--h-4--breakpoint--mobile--typography--font-size: 30px;--wp--custom--h-4--typography--font-size: 20px;--wp--custom--h-4--typography--line-height: var(--wp--custom--heading--typography--line-height);--wp--custom--h-5--breakpoint--mobile--typography--font-size: 26px;--wp--custom--h-5--breakpoint--mobile--typography--line-height: 1.35;--wp--custom--h-5--typography--font-size: 20px;--wp--custom--h-5--typography--line-height: var(--wp--custom--heading--typography--line-height);--wp--custom--h-6--typography--font-size: var(--wp--preset--font-size--normal);--wp--custom--h-6--typography--line-height: var(--wp--custom--heading--typography--line-height);--wp--custom--layout--content-size: 680px;--wp--custom--layout--wide-size: 1070px;--wp--custom--layout--content-meta-size: calc( var(--wp--custom--layout--wide-size) - var(--wp--custom--layout--content-size) );--wp--custom--list--spacing--padding--left: var(--wp--custom--margin--horizontal);--wp--custom--margin--baseline: 10px;--wp--custom--margin--horizontal: 30px;--wp--custom--margin--vertical: 30px;--wp--custom--paragraph--dropcap--margin: .1em .1em 0 0;--wp--custom--paragraph--dropcap--typography--font-size: 110px;--wp--custom--paragraph--dropcap--typography--font-weight: 400;--wp--custom--post-comment--typography--font-size: var(--wp--preset--font-size--normal);--wp--custom--post-comment--typography--line-height: var(--wp--custom--body--typography--line-height);--wp--custom--pullquote--citation--typography--font-size: 30px;--wp--custom--pullquote--citation--typography--font-family: inherit;--wp--custom--pullquote--citation--typography--font-style: italic;--wp--custom--pullquote--citation--spacing--margin--top: var(--wp--custom--margin--vertical);--wp--custom--pullquote--typography--text-align: left;--wp--custom--quote--citation--typography--font-size: 20px;--wp--custom--quote--citation--typography--font-family: inherit;--wp--custom--quote--citation--typography--font-style: normal;--wp--custom--quote--typography--text-align: left;--wp--custom--separator--opacity: 1;--wp--custom--separator--margin: var(--wp--custom--margin--vertical) auto;--wp--custom--separator--width: 150px;--wp--custom--table--figcaption--typography--font-size: var(--wp--preset--font-size--tiny);}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-darker-grey-color{color: var(--wp--preset--color--darker-grey) !important;}.has-dark-grey-color{color: var(--wp--preset--color--dark-grey) !important;}.has-dark-strokes-grey-color{color: var(--wp--preset--color--dark-strokes-grey) !important;}.has-light-grey-color{color: var(--wp--preset--color--light-grey) !important;}.has-beige-color{color: var(--wp--preset--color--beige) !important;}.has-beige-2-color{color: var(--wp--preset--color--beige-2) !important;}.has-blue-1-color{color: var(--wp--preset--color--blue-1) !important;}.has-blue-2-color{color: var(--wp--preset--color--blue-2) !important;}.has-blue-3-color{color: var(--wp--preset--color--blue-3) !important;}.has-blue-5-color{color: var(--wp--preset--color--blue-5) !important;}.has-off-white-color{color: var(--wp--preset--color--off-white) !important;}.has-off-white-2-color{color: var(--wp--preset--color--off-white-2) !important;}.has-light-salmon-color{color: var(--wp--preset--color--light-salmon) !important;}.has-green-color{color: var(--wp--preset--color--green) !important;}.has-success-green-color{color: var(--wp--preset--color--success-green) !important;}.has-coral-red-color{color: var(--wp--preset--color--coral-red) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-darker-grey-background-color{background-color: var(--wp--preset--color--darker-grey) !important;}.has-dark-grey-background-color{background-color: var(--wp--preset--color--dark-grey) !important;}.has-dark-strokes-grey-background-color{background-color: var(--wp--preset--color--dark-strokes-grey) !important;}.has-light-grey-background-color{background-color: var(--wp--preset--color--light-grey) !important;}.has-beige-background-color{background-color: var(--wp--preset--color--beige) !important;}.has-beige-2-background-color{background-color: var(--wp--preset--color--beige-2) !important;}.has-blue-1-background-color{background-color: var(--wp--preset--color--blue-1) !important;}.has-blue-2-background-color{background-color: var(--wp--preset--color--blue-2) !important;}.has-blue-3-background-color{background-color: var(--wp--preset--color--blue-3) !important;}.has-blue-5-background-color{background-color: var(--wp--preset--color--blue-5) !important;}.has-off-white-background-color{background-color: var(--wp--preset--color--off-white) !important;}.has-off-white-2-background-color{background-color: var(--wp--preset--color--off-white-2) !important;}.has-light-salmon-background-color{background-color: var(--wp--preset--color--light-salmon) !important;}.has-green-background-color{background-color: var(--wp--preset--color--green) !important;}.has-success-green-background-color{background-color: var(--wp--preset--color--success-green) !important;}.has-coral-red-background-color{background-color: var(--wp--preset--color--coral-red) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-darker-grey-border-color{border-color: var(--wp--preset--color--darker-grey) !important;}.has-dark-grey-border-color{border-color: var(--wp--preset--color--dark-grey) !important;}.has-dark-strokes-grey-border-color{border-color: var(--wp--preset--color--dark-strokes-grey) !important;}.has-light-grey-border-color{border-color: var(--wp--preset--color--light-grey) !important;}.has-beige-border-color{border-color: var(--wp--preset--color--beige) !important;}.has-beige-2-border-color{border-color: var(--wp--preset--color--beige-2) !important;}.has-blue-1-border-color{border-color: var(--wp--preset--color--blue-1) !important;}.has-blue-2-border-color{border-color: var(--wp--preset--color--blue-2) !important;}.has-blue-3-border-color{border-color: var(--wp--preset--color--blue-3) !important;}.has-blue-5-border-color{border-color: var(--wp--preset--color--blue-5) !important;}.has-off-white-border-color{border-color: var(--wp--preset--color--off-white) !important;}.has-off-white-2-border-color{border-color: var(--wp--preset--color--off-white-2) !important;}.has-light-salmon-border-color{border-color: var(--wp--preset--color--light-salmon) !important;}.has-green-border-color{border-color: var(--wp--preset--color--green) !important;}.has-success-green-border-color{border-color: var(--wp--preset--color--success-green) !important;}.has-coral-red-border-color{border-color: var(--wp--preset--color--coral-red) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-tiny-font-size{font-size: var(--wp--preset--font-size--tiny) !important;}.has-normal-font-size{font-size: var(--wp--preset--font-size--normal) !important;}.has-extra-large-font-size{font-size: var(--wp--preset--font-size--extra-large) !important;}.has-huge-font-size{font-size: var(--wp--preset--font-size--huge) !important;}.has-eb-garamond-font-family{font-family: var(--wp--preset--font-family--eb-garamond) !important;}.has-inter-font-family{font-family: var(--wp--preset--font-family--inter) !important;}body { --wp--style--block-gap: 24px; }		</style>
+
+		<title>Rife Free - WordPress theme | WordPress.org</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="icon" href="https://s.w.org/favicon.ico?2" type="image/x-icon">
+<link rel="dns-prefetch" href="//www.gstatic.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="dns-prefetch" href="//www.googletagmanager.com">
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-P24PF4B"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P24PF4B');</script>
+	<link rel="stylesheet" id="dashicons-css" href="https://wordpress.org/themes/wp-includes/css/dashicons.min.css?ver=6.0-alpha-52833" type="text/css" media="all">
+<link rel="stylesheet" id="admin-bar-css" href="https://wordpress.org/themes/wp-includes/css/admin-bar.min.css?ver=6.0-alpha-52833" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="https://wordpress.org/themes/wp-content/plugins/gutenberg/build/block-library/style.css?ver=12.7.1" type="text/css" media="all">
+<style id="wp-block-library-inline-css" type="text/css">
+.has-text-align-justify{text-align:justify;}
+</style>
+<link rel="stylesheet" id="mediaelement-css" href="https://wordpress.org/themes/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.16" type="text/css" media="all">
+<link rel="stylesheet" id="wp-mediaelement-css" href="https://wordpress.org/themes/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.0-alpha-52833" type="text/css" media="all">
+<link rel="stylesheet" id="open-sans-css" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&amp;display=swap" type="text/css" media="all">
+<link rel="stylesheet" id="wporg-themes-css" href="https://wordpress.org/themes/wp-content/themes/pub/wporg-themes/css/style.css?ver=20210719" type="text/css" media="all">
+<link rel="stylesheet" id="wporg-global-fonts-css" href="https://wordpress.org/themes/wp-content/mu-plugins/pub-sync/global-fonts/style.css?ver=1645722402" type="text/css" media="all">
+<link rel="stylesheet" id="wporg-global-header-footer-css" href="https://wordpress.org/themes/wp-content/mu-plugins/pub-sync/blocks/global-header-footer/build/style.css?ver=1645036490" type="text/css" media="all">
+<script type="text/javascript" src="https://wordpress.org/themes/wp-admin/load-scripts.php?c=0&amp;load%5Bchunk_0%5D=jquery-core,jquery-migrate&amp;ver=6.0-alpha-52833"></script>
+<script type="text/javascript" src="https://wordpress.org/themes/wp-includes/blocks/navigation/view.min.js?ver=3776ea67846b3bb10fe8f7cdd486b0ba" id="wp-block-navigation-view-js"></script>
+<link rel="https://api.w.org/" href="https://wordpress.org/themes/wp-json/"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://wordpress.org/themes/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://wordpress.org/themes/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 6.0-alpha-52833">
+<link rel="shortlink" href="https://wordpress.org/themes/?p=17938">
+<link rel="alternate" type="application/json+oembed" href="https://wordpress.org/themes/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwordpress.org%2Fthemes%2Frife-free%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://wordpress.org/themes/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwordpress.org%2Fthemes%2Frife-free%2F&amp;format=xml">
+<link rel="canonical" href="https://wordpress.org/themes/rife-free/">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""> <!-- Stream WordPress user activity plugin v3.8.2 -->
+	<style>
+		@media screen and (max-width: 782px) {
+			#wpadminbar li#wp-admin-bar-log-in,
+			#wpadminbar li#wp-admin-bar-register {
+				display: block;
+			}
+
+			#wpadminbar li#wp-admin-bar-log-in a,
+			#wpadminbar li#wp-admin-bar-register a {
+				padding: 0 8px;
+			}
+		}
+	</style>
+<meta property="og:title" content="Rife Free">
+<meta property="og:description" content="Rife Free is a great portfolio and photography WP theme with 7 ready-to-use demo layouts. It is also perfect for business, blogging websites and for your shop because it is WooCommerce compatible. More cool features in the Rife theme are the: ✓ Writing Effect ✓ One Page Mode ✓ Mobile/Touch Friendly Image &amp; Video Slider ✓ Bricks Gallery for Photographers ✓ Mega Menu ✓ Post Grid ✓ Google Fonts ✓ Hidden Sidebar and many more. Over 450 options to change in the Customizer and much more in each page, post, album or work. We also integrate Schema.org which helps your website be more visible to search engines. Elementor compatibility will help you make your great website even more natural. The theme is RTL and translation-ready (WPML). ★ Check our demos for more details: https://apollo13themes.com/rife/designs/">
+<meta property="og:site_name" content="WordPress.org">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://wordpress.org/themes/rife-free/">
+<meta property="og:image" content="https://i0.wp.com/themes.svn.wordpress.org/rife-free/2.4.13/screenshot.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@WordPress">
+<meta name="twitter:image" content="https://i0.wp.com/themes.svn.wordpress.org/rife-free/2.4.13/screenshot.png?w=560&amp;strip=all">
+<link rel="alternate" href="https://af.wordpress.org/themes/rife-free/" hreflang="af-za"><link rel="alternate" href="https://am.wordpress.org/themes/rife-free/" hreflang="am-et"><link rel="alternate" href="https://arg.wordpress.org/themes/rife-free/" hreflang="an-es"><link rel="alternate" href="https://ar.wordpress.org/themes/rife-free/" hreflang="ar"><link rel="alternate" href="https://pirate.wordpress.org/themes/rife-free/" hreflang="art"><link rel="alternate" href="https://as.wordpress.org/themes/rife-free/" hreflang="as-in"><link rel="alternate" href="https://az.wordpress.org/themes/rife-free/" hreflang="az-az"><link rel="alternate" href="https://az-tr.wordpress.org/themes/rife-free/" hreflang="az-tr"><link rel="alternate" href="https://bal.wordpress.org/themes/rife-free/" hreflang="bal"><link rel="alternate" href="https://bel.wordpress.org/themes/rife-free/" hreflang="be-by"><link rel="alternate" href="https://bg.wordpress.org/themes/rife-free/" hreflang="bg-bg"><link rel="alternate" href="https://bho.wordpress.org/themes/rife-free/" hreflang="bho"><link rel="alternate" href="https://bn.wordpress.org/themes/rife-free/" hreflang="bn-bd"><link rel="alternate" href="https://bn-in.wordpress.org/themes/rife-free/" hreflang="bn-in"><link rel="alternate" href="https://bo.wordpress.org/themes/rife-free/" hreflang="bo"><link rel="alternate" href="https://bre.wordpress.org/themes/rife-free/" hreflang="br-fr"><link rel="alternate" href="https://brx.wordpress.org/themes/rife-free/" hreflang="brx"><link rel="alternate" href="https://bs.wordpress.org/themes/rife-free/" hreflang="bs-ba"><link rel="alternate" href="https://ca.wordpress.org/themes/rife-free/" hreflang="ca"><link rel="alternate" href="https://ceb.wordpress.org/themes/rife-free/" hreflang="ceb"><link rel="alternate" href="https://co.wordpress.org/themes/rife-free/" hreflang="co-it"><link rel="alternate" href="https://cs.wordpress.org/themes/rife-free/" hreflang="cs-cz"><link rel="alternate" href="https://cy.wordpress.org/themes/rife-free/" hreflang="cy-gb"><link rel="alternate" href="https://da.wordpress.org/themes/rife-free/" hreflang="da-dk"><link rel="alternate" href="https://de-ch.wordpress.org/themes/rife-free/" hreflang="de-ch"><link rel="alternate" href="https://de.wordpress.org/themes/rife-free/" hreflang="de-de"><link rel="alternate" href="https://de-at.wordpress.org/themes/rife-free/" hreflang="de-de"><link rel="alternate" href="https://dsb.wordpress.org/themes/rife-free/" hreflang="dsb"><link rel="alternate" href="https://dv.wordpress.org/themes/rife-free/" hreflang="dv-mv"><link rel="alternate" href="https://dzo.wordpress.org/themes/rife-free/" hreflang="dz-bt"><link rel="alternate" href="https://ewe.wordpress.org/themes/rife-free/" hreflang="ee-gh"><link rel="alternate" href="https://el.wordpress.org/themes/rife-free/" hreflang="el-gr"><link rel="alternate" href="https://wordpress.org/themes/rife-free/" hreflang="en"><link rel="alternate" href="https://en-au.wordpress.org/themes/rife-free/" hreflang="en-au"><link rel="alternate" href="https://en-ca.wordpress.org/themes/rife-free/" hreflang="en-ca"><link rel="alternate" href="https://en-gb.wordpress.org/themes/rife-free/" hreflang="en-gb"><link rel="alternate" href="https://en-nz.wordpress.org/themes/rife-free/" hreflang="en-nz"><link rel="alternate" href="https://en-za.wordpress.org/themes/rife-free/" hreflang="en-za"><link rel="alternate" href="https://eo.wordpress.org/themes/rife-free/" hreflang="eo"><link rel="alternate" href="https://es-ar.wordpress.org/themes/rife-free/" hreflang="es-ar"><link rel="alternate" href="https://cl.wordpress.org/themes/rife-free/" hreflang="es-cl"><link rel="alternate" href="https://es-co.wordpress.org/themes/rife-free/" hreflang="es-co"><link rel="alternate" href="https://es-cr.wordpress.org/themes/rife-free/" hreflang="es-cr"><link rel="alternate" href="https://es-do.wordpress.org/themes/rife-free/" hreflang="es-do"><link rel="alternate" href="https://es-ec.wordpress.org/themes/rife-free/" hreflang="es-ec"><link rel="alternate" href="https://es.wordpress.org/themes/rife-free/" hreflang="es-es"><link rel="alternate" href="https://es-gt.wordpress.org/themes/rife-free/" hreflang="es-gt"><link rel="alternate" href="https://es-hn.wordpress.org/themes/rife-free/" hreflang="es-hn"><link rel="alternate" href="https://es-mx.wordpress.org/themes/rife-free/" hreflang="es-mx"><link rel="alternate" href="https://pe.wordpress.org/themes/rife-free/" hreflang="es-pe"><link rel="alternate" href="https://es-pr.wordpress.org/themes/rife-free/" hreflang="es-pr"><link rel="alternate" href="https://es-uy.wordpress.org/themes/rife-free/" hreflang="es-uy"><link rel="alternate" href="https://ve.wordpress.org/themes/rife-free/" hreflang="es-ve"><link rel="alternate" href="https://et.wordpress.org/themes/rife-free/" hreflang="et-ee"><link rel="alternate" href="https://eu.wordpress.org/themes/rife-free/" hreflang="eu-es"><link rel="alternate" href="https://fa.wordpress.org/themes/rife-free/" hreflang="fa"><link rel="alternate" href="https://fa-af.wordpress.org/themes/rife-free/" hreflang="fa"><link rel="alternate" href="https://fi.wordpress.org/themes/rife-free/" hreflang="fi-fi"><link rel="alternate" href="https://fao.wordpress.org/themes/rife-free/" hreflang="fo-fo"><link rel="alternate" href="https://fon.wordpress.org/themes/rife-free/" hreflang="fon"><link rel="alternate" href="https://fr-be.wordpress.org/themes/rife-free/" hreflang="fr-be"><link rel="alternate" href="https://fr-ca.wordpress.org/themes/rife-free/" hreflang="fr-ca"><link rel="alternate" href="https://fr.wordpress.org/themes/rife-free/" hreflang="fr-fr"><link rel="alternate" href="https://fy.wordpress.org/themes/rife-free/" hreflang="fy-nl"><link rel="alternate" href="https://ga.wordpress.org/themes/rife-free/" hreflang="ga-ie"><link rel="alternate" href="https://gax.wordpress.org/themes/rife-free/" hreflang="gax"><link rel="alternate" href="https://gd.wordpress.org/themes/rife-free/" hreflang="gd-gb"><link rel="alternate" href="https://gl.wordpress.org/themes/rife-free/" hreflang="gl-es"><link rel="alternate" href="https://gu.wordpress.org/themes/rife-free/" hreflang="gu"><link rel="alternate" href="https://hau.wordpress.org/themes/rife-free/" hreflang="ha-ng"><link rel="alternate" href="https://he.wordpress.org/themes/rife-free/" hreflang="he-il"><link rel="alternate" href="https://hi.wordpress.org/themes/rife-free/" hreflang="hi-in"><link rel="alternate" href="https://hr.wordpress.org/themes/rife-free/" hreflang="hr-hr"><link rel="alternate" href="https://hsb.wordpress.org/themes/rife-free/" hreflang="hsb"><link rel="alternate" href="https://hat.wordpress.org/themes/rife-free/" hreflang="ht-ht"><link rel="alternate" href="https://hu.wordpress.org/themes/rife-free/" hreflang="hu-hu"><link rel="alternate" href="https://hy.wordpress.org/themes/rife-free/" hreflang="hy-am"><link rel="alternate" href="https://id.wordpress.org/themes/rife-free/" hreflang="id-id"><link rel="alternate" href="https://ibo.wordpress.org/themes/rife-free/" hreflang="ig-ng"><link rel="alternate" href="https://is.wordpress.org/themes/rife-free/" hreflang="is-is"><link rel="alternate" href="https://it.wordpress.org/themes/rife-free/" hreflang="it-it"><link rel="alternate" href="https://ja.wordpress.org/themes/rife-free/" hreflang="ja-jp"><link rel="alternate" href="https://jv.wordpress.org/themes/rife-free/" hreflang="jv-id"><link rel="alternate" href="https://ka.wordpress.org/themes/rife-free/" hreflang="ka-ge"><link rel="alternate" href="https://kaa.wordpress.org/themes/rife-free/" hreflang="kaa"><link rel="alternate" href="https://kk.wordpress.org/themes/rife-free/" hreflang="kk-kz"><link rel="alternate" href="https://kal.wordpress.org/themes/rife-free/" hreflang="kl-gl"><link rel="alternate" href="https://km.wordpress.org/themes/rife-free/" hreflang="km-kh"><link rel="alternate" href="https://kn.wordpress.org/themes/rife-free/" hreflang="kn-in"><link rel="alternate" href="https://ko.wordpress.org/themes/rife-free/" hreflang="ko-kr"><link rel="alternate" href="https://ku.wordpress.org/themes/rife-free/" hreflang="ku-iq"><link rel="alternate" href="https://kmr.wordpress.org/themes/rife-free/" hreflang="ku-tr"><link rel="alternate" href="https://cor.wordpress.org/themes/rife-free/" hreflang="kw-gb"><link rel="alternate" href="https://kir.wordpress.org/themes/rife-free/" hreflang="ky-kg"><link rel="alternate" href="https://ltz.wordpress.org/themes/rife-free/" hreflang="lb-lu"><link rel="alternate" href="https://lug.wordpress.org/themes/rife-free/" hreflang="lg-ug"><link rel="alternate" href="https://lij.wordpress.org/themes/rife-free/" hreflang="lij"><link rel="alternate" href="https://lin.wordpress.org/themes/rife-free/" hreflang="ln-cd"><link rel="alternate" href="https://lo.wordpress.org/themes/rife-free/" hreflang="lo-la"><link rel="alternate" href="https://lt.wordpress.org/themes/rife-free/" hreflang="lt-lt"><link rel="alternate" href="https://lv.wordpress.org/themes/rife-free/" hreflang="lv-lv"><link rel="alternate" href="https://mai.wordpress.org/themes/rife-free/" hreflang="mai"><link rel="alternate" href="https://mfe.wordpress.org/themes/rife-free/" hreflang="mfe"><link rel="alternate" href="https://mg.wordpress.org/themes/rife-free/" hreflang="mg-mg"><link rel="alternate" href="https://mri.wordpress.org/themes/rife-free/" hreflang="mi-nz"><link rel="alternate" href="https://mk.wordpress.org/themes/rife-free/" hreflang="mk-mk"><link rel="alternate" href="https://ml.wordpress.org/themes/rife-free/" hreflang="ml-in"><link rel="alternate" href="https://khk.wordpress.org/themes/rife-free/" hreflang="mn-mn"><link rel="alternate" href="https://mr.wordpress.org/themes/rife-free/" hreflang="mr"><link rel="alternate" href="https://ms.wordpress.org/themes/rife-free/" hreflang="ms"><link rel="alternate" href="https://mlt.wordpress.org/themes/rife-free/" hreflang="mt-mt"><link rel="alternate" href="https://mya.wordpress.org/themes/rife-free/" hreflang="my-mm"><link rel="alternate" href="https://nb.wordpress.org/themes/rife-free/" hreflang="nb-no"><link rel="alternate" href="https://ne.wordpress.org/themes/rife-free/" hreflang="ne-np"><link rel="alternate" href="https://nl-be.wordpress.org/themes/rife-free/" hreflang="nl-be"><link rel="alternate" href="https://nl.wordpress.org/themes/rife-free/" hreflang="nl-nl"><link rel="alternate" href="https://nn.wordpress.org/themes/rife-free/" hreflang="nn-no"><link rel="alternate" href="https://nqo.wordpress.org/themes/rife-free/" hreflang="nqo"><link rel="alternate" href="https://oci.wordpress.org/themes/rife-free/" hreflang="oc-fr"><link rel="alternate" href="https://ory.wordpress.org/themes/rife-free/" hreflang="or-in"><link rel="alternate" href="https://os.wordpress.org/themes/rife-free/" hreflang="os"><link rel="alternate" href="https://pan.wordpress.org/themes/rife-free/" hreflang="pa-in"><link rel="alternate" href="https://pap-cw.wordpress.org/themes/rife-free/" hreflang="pap"><link rel="alternate" href="https://pap-aw.wordpress.org/themes/rife-free/" hreflang="pap"><link rel="alternate" href="https://pcd.wordpress.org/themes/rife-free/" hreflang="pcd"><link rel="alternate" href="https://pcm.wordpress.org/themes/rife-free/" hreflang="pcm"><link rel="alternate" href="https://pl.wordpress.org/themes/rife-free/" hreflang="pl-pl"><link rel="alternate" href="https://ps.wordpress.org/themes/rife-free/" hreflang="ps-af"><link rel="alternate" href="https://pt-ao.wordpress.org/themes/rife-free/" hreflang="pt-ao"><link rel="alternate" href="https://br.wordpress.org/themes/rife-free/" hreflang="pt-br"><link rel="alternate" href="https://pt.wordpress.org/themes/rife-free/" hreflang="pt-pt"><link rel="alternate" href="https://roh.wordpress.org/themes/rife-free/" hreflang="rm-ch"><link rel="alternate" href="https://ro.wordpress.org/themes/rife-free/" hreflang="ro-ro"><link rel="alternate" href="https://vec.wordpress.org/themes/rife-free/" hreflang="roa"><link rel="alternate" href="https://ru.wordpress.org/themes/rife-free/" hreflang="ru-ru"><link rel="alternate" href="https://kin.wordpress.org/themes/rife-free/" hreflang="rw-rw"><link rel="alternate" href="https://sa.wordpress.org/themes/rife-free/" hreflang="sa-in"><link rel="alternate" href="https://snd.wordpress.org/themes/rife-free/" hreflang="sd-pk"><link rel="alternate" href="https://si.wordpress.org/themes/rife-free/" hreflang="si-lk"><link rel="alternate" href="https://sk.wordpress.org/themes/rife-free/" hreflang="sk-sk"><link rel="alternate" href="https://sl.wordpress.org/themes/rife-free/" hreflang="sl-si"><link rel="alternate" href="https://sna.wordpress.org/themes/rife-free/" hreflang="sn-zw"><link rel="alternate" href="https://so.wordpress.org/themes/rife-free/" hreflang="so-so"><link rel="alternate" href="https://sq.wordpress.org/themes/rife-free/" hreflang="sq-al"><link rel="alternate" href="https://sq-xk.wordpress.org/themes/rife-free/" hreflang="sq-xk"><link rel="alternate" href="https://sr.wordpress.org/themes/rife-free/" hreflang="sr-rs"><link rel="alternate" href="https://ssw.wordpress.org/themes/rife-free/" hreflang="ss-sz"><link rel="alternate" href="https://su.wordpress.org/themes/rife-free/" hreflang="su-id"><link rel="alternate" href="https://sv.wordpress.org/themes/rife-free/" hreflang="sv-se"><link rel="alternate" href="https://sw.wordpress.org/themes/rife-free/" hreflang="sw"><link rel="alternate" href="https://syr.wordpress.org/themes/rife-free/" hreflang="syr"><link rel="alternate" href="https://ta.wordpress.org/themes/rife-free/" hreflang="ta-in"><link rel="alternate" href="https://ta-lk.wordpress.org/themes/rife-free/" hreflang="ta-lk"><link rel="alternate" href="https://te.wordpress.org/themes/rife-free/" hreflang="te"><link rel="alternate" href="https://tg.wordpress.org/themes/rife-free/" hreflang="tg-tj"><link rel="alternate" href="https://th.wordpress.org/themes/rife-free/" hreflang="th"><link rel="alternate" href="https://tir.wordpress.org/themes/rife-free/" hreflang="ti-er"><link rel="alternate" href="https://tuk.wordpress.org/themes/rife-free/" hreflang="tk-tm"><link rel="alternate" href="https://tl.wordpress.org/themes/rife-free/" hreflang="tl-ph"><link rel="alternate" href="https://tr.wordpress.org/themes/rife-free/" hreflang="tr-tr"><link rel="alternate" href="https://tt.wordpress.org/themes/rife-free/" hreflang="tt-ru"><link rel="alternate" href="https://ug.wordpress.org/themes/rife-free/" hreflang="ug-cn"><link rel="alternate" href="https://uk.wordpress.org/themes/rife-free/" hreflang="uk-ua"><link rel="alternate" href="https://ur.wordpress.org/themes/rife-free/" hreflang="ur-pk"><link rel="alternate" href="https://uz.wordpress.org/themes/rife-free/" hreflang="uz-uz"><link rel="alternate" href="https://vi.wordpress.org/themes/rife-free/" hreflang="vi-vn"><link rel="alternate" href="https://wol.wordpress.org/themes/rife-free/" hreflang="wo-sn"><link rel="alternate" href="https://wordpress.org/themes/rife-free/" hreflang="x-default"><link rel="alternate" href="https://xho.wordpress.org/themes/rife-free/" hreflang="xh-za"><link rel="alternate" href="https://yor.wordpress.org/themes/rife-free/" hreflang="yo-ng"><link rel="alternate" href="https://zgh.wordpress.org/themes/rife-free/" hreflang="zgh"><link rel="alternate" href="https://cn.wordpress.org/themes/rife-free/" hreflang="zh-cn"><link rel="alternate" href="https://zh-hk.wordpress.org/themes/rife-free/" hreflang="zh-hk"><link rel="alternate" href="https://zh-sg.wordpress.org/themes/rife-free/" hreflang="zh-sg"><link rel="alternate" href="https://tw.wordpress.org/themes/rife-free/" hreflang="zh-tw"><link rel="alternate" href="https://zul.wordpress.org/themes/rife-free/" hreflang="zu-za">
+<style type="text/css">img#wpstats{display:none}</style>
+		
+<script type="application/ld+json">
+[
+    {
+        "@context": "http://schema.org",
+        "@type": [
+            "SoftwareApplication",
+            "Product"
+        ],
+        "applicationCategory": "OtherApplication",
+        "operatingSystem": "WordPress",
+        "name": "Rife Free",
+        "url": "https://wordpress.org/themes/rife-free/",
+        "description": "Rife Free is a great portfolio and photography WP theme with 7 ready-to-use demo layouts. It is also perfect for business, blogging websites and for your shop because it is WooCommerce compatible. More cool features in the Rife theme are the: &#10003; Writing Effect &#10003; One Page Mode &#10003; Mobile/Touch Friendly Image &amp; Video Slider &#10003; Bricks Gallery for Photographers &#10003; Mega Menu &#10003; Post Grid &#10003; Google Fonts &#10003; Hidden Sidebar and many more. Over 450 options to change in the Customizer and much more in each page, post, album or work. We also integrate Schema.org which helps your website be more visible to search engines. Elementor compatibility will help you make your great website even more natural. The theme is RTL and translation-ready (WPML). &#9733; Check our demos for more details: https://apollo13themes.com/rife/designs/",
+        "softwareVersion": "2.4.13",
+        "fileFormat": "application/zip",
+        "downloadUrl": "https://downloads.wordpress.org/theme/rife-free.2.4.13.zip",
+        "dateModified": "2021-09-02T14:30:01+00:00",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "worstRating": 1,
+            "bestRating": 5,
+            "ratingValue": 5,
+            "ratingCount": 295,
+            "reviewCount": 295
+        },
+        "interactionStatistic": {
+            "@type": "InteractionCounter",
+            "interactionType": "http://schema.org/DownloadAction",
+            "userInteractionCount": 485408
+        },
+        "image": "https://i0.wp.com/themes.svn.wordpress.org/rife-free/2.4.13/screenshot.png",
+        "offers": {
+            "@type": "Offer",
+            "url": "https://wordpress.org/themes/rife-free/",
+            "price": "0.00",
+            "priceCurrency": "USD",
+            "seller": {
+                "@type": "Organization",
+                "name": "WordPress.org",
+                "url": "https://wordpress.org"
+            }
+        }
+    }
+]
+</script>
+<meta name="description" content="Rife Free is a great portfolio and photography WP theme with 7 ready-to-use demo layouts. It is also perfect for business, blogging websites and for your shop because it is WooCommerce compatible. More cool features in the Rife theme are the: ✓ Writing Effect ✓ One Page Mode ✓ Mobile/Touch Friendly Image &amp; Video Slider…">
+<style type="text/css" media="print">#wpadminbar { display:none; }</style>
+			<style type="text/css" id="wp-custom-css">
+			div.theme-report.disabled {
+	display: none;
+}		</style>
+			<script type="text/javascript" charset="UTF-8" src="https://www.gstatic.com/charts/51/loader.js"></script><link id="load-css-0" rel="stylesheet" type="text/css" href="https://www.gstatic.com/charts/51/css/core/tooltip.css"><link id="load-css-1" rel="stylesheet" type="text/css" href="https://www.gstatic.com/charts/51/css/util/util.css"><script type="text/javascript" charset="UTF-8" src="https://www.gstatic.com/charts/51/js/jsapi_compiled_default_module.js"></script><script type="text/javascript" charset="UTF-8" src="https://www.gstatic.com/charts/51/js/jsapi_compiled_graphics_module.js"></script><script type="text/javascript" charset="UTF-8" src="https://www.gstatic.com/charts/51/js/jsapi_compiled_ui_module.js"></script><script type="text/javascript" charset="UTF-8" src="https://www.gstatic.com/charts/51/js/jsapi_compiled_corechart_module.js"></script></head>
+
+	<body class="repopackage-template-default single single-repopackage postid-17938 admin-bar no-customize-support modal-open theme-installer-active full-overlay-active">
+		<a id="wporg-skip-link" class="skip-link screen-reader-text" href="#themes" data-selector="#themes">Skip to content</a>
+		<div id="wpadminbar" class="nojq">
+						<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar">
+				<ul id="wp-admin-bar-root-default" class="ab-top-menu"><li id="wp-admin-bar-wp-logo" class="menupop"><a class="ab-item" aria-haspopup="true" href="https://wordpress.org/about/"><span class="ab-icon" aria-hidden="true"></span><span class="screen-reader-text">About WordPress</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-wp-logo-default" class="ab-submenu"><li id="wp-admin-bar-about"><a class="ab-item" href="https://wordpress.org/about/">About WordPress</a></li></ul><ul id="wp-admin-bar-wp-logo-external" class="ab-sub-secondary ab-submenu"><li id="wp-admin-bar-wporg"><a class="ab-item" href="https://wordpress.org/">WordPress.org</a></li><li id="wp-admin-bar-documentation"><a class="ab-item" href="https://wordpress.org/support/">Documentation</a></li><li id="wp-admin-bar-support-forums"><a class="ab-item" href="https://wordpress.org/support/forums/">Support</a></li><li id="wp-admin-bar-feedback"><a class="ab-item" href="https://wordpress.org/support/forum/requests-and-feedback">Feedback</a></li></ul></div></li></ul><ul id="wp-admin-bar-top-secondary" class="ab-top-secondary ab-top-menu"><li id="wp-admin-bar-search" class="admin-bar-search"><div class="ab-item ab-empty-item" tabindex="-1"><form action="https://wordpress.org/themes/" method="get" id="adminbarsearch"><input class="adminbar-input" name="s" id="adminbar-search" type="text" value="" maxlength="150"><label for="adminbar-search" class="screen-reader-text">Search</label><input type="submit" class="adminbar-button" value="Search"></form></div></li><li id="wp-admin-bar-log-in"><a class="ab-item" href="https://login.wordpress.org/?redirect_to=https%3A%2F%2Fwordpress.org%2Fthemes%2Frife-free%2F&amp;locale=en_US">Log In</a></li><li id="wp-admin-bar-register"><a class="ab-item" href="https://login.wordpress.org/register?locale=en_US">Register</a></li></ul>			</div>
+					</div>
+
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0.49803921568627"></feFuncR><feFuncG type="table" tableValues="0 0.49803921568627"></feFuncG><feFuncB type="table" tableValues="0 0.49803921568627"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0 1"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1"></feFuncR><feFuncG type="table" tableValues="0 0.27843137254902"></feFuncG><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0"></feFuncR><feFuncG type="table" tableValues="0 0.64705882352941"></feFuncG><feFuncB type="table" tableValues="0 1"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.78039215686275 1"></feFuncR><feFuncG type="table" tableValues="0 0.94901960784314"></feFuncG><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0.44705882352941 0.4"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.098039215686275 1"></feFuncR><feFuncG type="table" tableValues="0 0.66274509803922"></feFuncG><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P24PF4B" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	
+
+<header class="wp-container-6 wp-block-group alignfull global-header">
+	
+	<!-- The design calls for two logos, a small "mark" on mobile/tablet, and the full logo for desktops. -->
+		<figure class="wp-block-image global-header__wporg-logo-mark">
+			<a href="https://wordpress.org/">
+				<svg xmlns="http://www.w3.org/2000/svg" role="img" width="28" height="28" viewBox="0 0 28 28">
+	<title>WordPress.org</title>
+	<path fill="currentColor" d="M13.6052 0.923525C16.1432 0.923525 18.6137 1.67953 20.7062 3.09703C22.7447 4.47403 24.3512 6.41803 25.3097 8.68603C26.9837 12.6415 26.5382 17.164 24.1352 20.7145C22.7582 22.753 20.8142 24.3595 18.5462 25.318C14.5907 26.992 10.0682 26.5465 6.51772 24.1435C4.47922 22.7665 2.87272 20.8225 1.91422 18.5545C0.240225 14.599 0.685725 10.0765 3.08872 6.52603C4.46572 4.48753 6.40973 2.88103 8.67772 1.92253C10.2302 1.26103 11.9177 0.923525 13.6052 0.923525ZM13.6052 0.113525C6.15322 0.113525 0.105225 6.16153 0.105225 13.6135C0.105225 21.0655 6.15322 27.1135 13.6052 27.1135C21.0572 27.1135 27.1052 21.0655 27.1052 13.6135C27.1052 6.16153 21.0572 0.113525 13.6052 0.113525Z"></path>
+	<path fill="currentColor" d="M2.36011 13.6133C2.36011 17.9198 4.81711 21.8618 8.70511 23.7383L3.33211 9.03684C2.68411 10.4813 2.36011 12.0338 2.36011 13.6133ZM21.2061 13.0463C21.2061 11.6558 20.7066 10.6973 20.2746 9.94134C19.8426 9.18534 19.1676 8.22684 19.1676 7.30884C19.1676 6.39084 19.9506 5.31084 21.0576 5.31084H21.2061C16.6296 1.11234 9.51511 1.42284 5.31661 6.01284C4.91161 6.45834 4.53361 6.93084 4.20961 7.43034H4.93861C6.11311 7.43034 7.93561 7.28184 7.93561 7.28184C8.54311 7.24134 8.61061 8.13234 8.00311 8.21334C8.00311 8.21334 7.39561 8.28084 6.72061 8.32134L10.8111 20.5118L13.2681 13.1273L11.5131 8.32134C10.9056 8.28084 10.3386 8.21334 10.3386 8.21334C9.73111 8.17284 9.79861 7.25484 10.4061 7.28184C10.4061 7.28184 12.2691 7.43034 13.3626 7.43034C14.4561 7.43034 16.3596 7.28184 16.3596 7.28184C16.9671 7.24134 17.0346 8.13234 16.4271 8.21334C16.4271 8.21334 15.8196 8.28084 15.1446 8.32134L19.2081 20.4173L20.3691 16.7453C20.8821 15.1388 21.1926 14.0048 21.1926 13.0328L21.2061 13.0463ZM13.7946 14.5853L10.4196 24.3998C12.6876 25.0613 15.1041 25.0073 17.3316 24.2243L17.2506 24.0758L13.7946 14.5853ZM23.4741 8.21334C23.5281 8.59134 23.5551 8.98284 23.5551 9.37434C23.5551 10.5218 23.3391 11.8043 22.7046 13.3973L19.2621 23.3333C24.5271 20.2688 26.4036 13.5593 23.4741 8.21334Z"></path>
+</svg>			</a>
+		</figure>
+
+		<figure class="wp-block-image global-header__wporg-logo-full">
+			<a href="https://wordpress.org/">
+				<svg xmlns="http://www.w3.org/2000/svg" role="img" width="329" height="52" viewBox="0 0 329 52">
+	<title>WordPress.org</title>
+	<path fill="currentColor" d="M4.33 26a21.68 21.68 0 0 0 12.22 19.5L6.21 17.18A21.66 21.66 0 0 0 4.33 26ZM26.38 27.89l-6.5 18.89a21.31 21.31 0 0 0 6.12.89 21.77 21.77 0 0 0 7.2-1.23 1.429 1.429 0 0 1-.16-.3l-6.66-18.25Z"></path>
+	<path fill="currentColor" d="M26 0a26 26 0 1 0 0 52 26 26 0 0 0 0-52Zm20.27 39.66a24.47 24.47 0 0 1-29.78 8.86 24.49 24.49 0 0 1-13-13 24.4 24.4 0 0 1 5.23-26.8 24.46 24.46 0 0 1 26.79-5.24 24.49 24.49 0 0 1 13 13 24.42 24.42 0 0 1-2.25 23.17l.01.01Z"></path>
+	<path fill="currentColor" d="M45 15.61c.103.736.153 1.477.15 2.22a20.38 20.38 0 0 1-1.65 7.76l-6.61 19.14A21.65 21.65 0 0 0 45 15.61ZM40.63 24.91a11.45 11.45 0 0 0-1.79-6c-1.1-1.78-2.13-3.29-2.13-5.08A3.76 3.76 0 0 1 40.35 10h.28A21.65 21.65 0 0 0 7.9 14.1h1.39c2.27 0 5.78-.27 5.78-.27a.9.9 0 0 1 .13 1.79s-1.17.13-2.47.2l7.88 23.47 4.75-14.22L22 15.84c-1.17-.07-2.27-.2-2.27-.2a.9.9 0 0 1 .14-1.79s3.57.27 5.7.27c2.13 0 5.78-.27 5.78-.27a.9.9 0 0 1 .14 1.79s-1.18.13-2.48.2l7.83 23.29 2.23-7.08a25.171 25.171 0 0 0 1.56-7.14ZM145.83 19.3h-10.34v1.1c3.23 0 3.75.69 3.75 4.79v7.4c0 4.1-.52 4.85-3.75 4.85-2.48-.35-4.16-1.68-6.47-4.22l-2.66-2.89c3.58-.63 5.49-2.89 5.49-5.43 0-3.18-2.72-5.6-7.8-5.6h-10.17v1.1c3.24 0 3.76.69 3.76 4.79v7.4c0 4.1-.52 4.85-3.76 4.85v1.1h11.5v-1.1c-3.24 0-3.76-.75-3.76-4.85v-2.08h1l6.42 8h16.81c8.26 0 11.85-4.39 11.85-9.65 0-5.26-3.61-9.56-11.87-9.56Zm-24.21 9.42V21H124a3.551 3.551 0 0 1 3.76 3.87 3.536 3.536 0 0 1-3.76 3.85h-2.38Zm24.38 8h-.4c-2.08 0-2.37-.52-2.37-3.18V21H146c6 0 7.11 4.39 7.11 7.8S152 36.75 146 36.75v-.03ZM93.49 13.52H82.62v1.16c3.7 0 4.22 1 3.07 4.39l-4 11.78L76 13.52h-1.1l-5.85 17.33-3.87-11.78c-1.22-3.59-.29-4.39 3.12-4.39v-1.16H55.47v1.16c3.35 0 4.28.86 5.66 5.08l6.42 19.76h.75l6-18.08 5.9 18.08h.8l6.59-19.76c1.44-4.22 2.31-5.08 5.95-5.08l-.05-1.16ZM101.34 18.55c-6.35 0-11.55 4.68-11.55 10.34s5.2 10.4 11.55 10.4c6.35 0 11.56-4.68 11.56-10.4 0-5.72-5.2-10.34-11.56-10.34Zm0 18.89c-5.31 0-7.16-4.74-7.16-8.55 0-3.81 1.85-8.55 7.16-8.55 5.31 0 7.23 4.79 7.23 8.55 0 3.76-1.85 8.55-7.23 8.55ZM170.67 13.52h-12v1.16c3.88 0 4.57.92 4.57 6.7v9.24c0 5.78-.69 6.76-4.57 6.76v1.16H172v-1.16c-3.88 0-4.57-1-4.57-6.76v-2.83h3.29c6 0 9.25-3.12 9.25-7.11s-3.35-7.16-9.3-7.16Zm0 12.13h-3.29v-10h3.29c3.24 0 4.74 2.31 4.74 5.08s-1.5 4.92-4.74 4.92ZM219.32 34.15c-.52 1.9-1.15 2.6-5.26 2.6h-.81c-3 0-3.52-.7-3.52-4.8v-2.66c4.51 0 4.85.41 4.85 3.41h1.1v-8.61h-1.1c0 3-.34 3.41-4.85 3.41V21h3.18c4.1 0 4.74.69 5.26 2.6l.28 1.1h.93l-.38-5.4h-17v1.1c3.23 0 3.75.69 3.75 4.79v7.4c0 3.75-.44 4.69-3 4.83-2.42-.37-4.09-1.69-6.37-4.2l-2.65-2.89c3.58-.63 5.49-2.89 5.49-5.43 0-3.18-2.72-5.6-7.8-5.6h-10.17v1.1c3.23 0 3.75.69 3.75 4.79v7.4c0 4.1-.52 4.85-3.75 4.85v1.1h11.49v-1.1c-3.23 0-3.75-.75-3.75-4.85v-2.08h1l6.41 8h23.75l.35-5.43h-.87l-.31 1.07ZM189 28.72V21h2.37a3.542 3.542 0 0 1 3.75 3.87 3.532 3.532 0 0 1-.998 2.77 3.532 3.532 0 0 1-2.752 1.05l-2.37.03ZM234.52 27.91l-3.18-1.56c-2.78-1.27-4-2.08-4-3.59 0-1.51 1.5-2.36 3.12-2.36 3.06 0 4.57 2.25 5 5h1.21v-6.85h-1.09a3.415 3.415 0 0 1-.75 1.56 7.25 7.25 0 0 0-4.51-1.5c-3.58 0-6.18 2.36-6.18 5.14 0 2.54 1.73 4.45 4 5.54l3.29 1.56c2.37 1.1 3.7 2.26 3.7 3.76 0 1.73-1.5 2.77-3.35 2.77-3.41 0-6.07-2.25-6.53-6.06h-1.15v8h1.09a4.194 4.194 0 0 1 .93-2 8.481 8.481 0 0 0 5.2 2c3.87 0 7-2.54 7-6.18.07-1.77-1.03-3.9-3.8-5.23ZM252 27.91l-3.18-1.56c-2.78-1.27-4-2.08-4-3.59 0-1.51 1.5-2.36 3.12-2.36 3.06 0 4.57 2.25 5 5h1.21v-6.85H253a3.415 3.415 0 0 1-.75 1.56 7.25 7.25 0 0 0-4.51-1.5c-3.58 0-6.18 2.36-6.18 5.14 0 2.54 1.73 4.45 4 5.54l3.29 1.56c2.37 1.1 3.7 2.26 3.7 3.76 0 1.73-1.5 2.77-3.35 2.77-3.41 0-6.07-2.25-6.53-6.06h-1.15v8h1.09a4.194 4.194 0 0 1 .93-2 8.481 8.481 0 0 0 5.2 2c3.87 0 7.05-2.54 7.05-6.18.07-1.77-1.03-3.9-3.79-5.23ZM277.56 18.75a10.481 10.481 0 0 0-10.68 10.17 10.47 10.47 0 0 0 10.68 10.16c5.9 0 10.71-4.58 10.71-10.16s-4.81-10.17-10.71-10.17Zm0 19c-5.52 0-7.63-4.91-7.63-8.88 0-3.97 2.07-8.87 7.63-8.87 5.56 0 7.66 4.94 7.66 8.92 0 3.98-2.11 8.88-7.66 8.88v-.05ZM301.71 33.79l-3.14-3.69c3.63-.38 5.71-2.59 5.71-5.38 0-3-2.44-5.42-6.89-5.42h-8.47v.7c2.66 0 3.05.51 3.05 3.72v10.39c0 3.21-.39 3.76-3.05 3.76v.67h8.66v-.67c-2.66 0-3.05-.55-3.05-3.76v-4H296l6.35 8.44h5.29v-.67c-1.88-.24-4.03-1.88-5.93-4.09ZM294.53 29v-8.52h2.82c2.79 0 4.08 1.93 4.08 4.24 0 2.31-1.29 4.28-4.08 4.28h-2.82ZM319.6 30.59v.64c2.21 0 3 .7 3 2.08 0 2.89-2.5 4.39-5.29 4.39-5.93 0-7.6-4.81-7.6-8.78 0-3.97 1.86-8.92 7-8.92 3.59 0 6.09 2.54 7 6.7h.64v-7h-.64a3.281 3.281 0 0 1-1.09 1.83 8.203 8.203 0 0 0-6-2.73 10.167 10.167 0 0 0-9.851 10.165 10.169 10.169 0 0 0 9.851 10.165c3.34 0 4.78-1.66 8.34-1.66V35c0-3.21.39-3.75 3.05-3.75v-.64l-8.41-.02ZM261.9 34.77a2.061 2.061 0 1 0 .288 4.112 2.061 2.061 0 0 0-.288-4.112Z"></path>
+</svg>			</a>
+		</figure>
+	
+
+	
+	<nav class="wp-container-2 is-responsive global-header__navigation wp-block-navigation"><button aria-haspopup="true" aria-label="Open menu" class="wp-block-navigation__responsive-container-open " data-micromodal-trigger="modal-1"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="7.5" width="16" height="1.5"></rect><rect x="4" y="15" width="16" height="1.5"></rect></svg></button>
+			<div class="wp-block-navigation__responsive-container  " style="" id="modal-1">
+				<div class="wp-block-navigation__responsive-close" tabindex="-1" data-micromodal-close="">
+					<div class="wp-block-navigation__responsive-dialog" aria-label="Menu">
+							<button aria-label="Close menu" data-micromodal-close="" class="wp-block-navigation__responsive-container-close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M13 11.8l6.1-6.3-1-1-6.1 6.2-6.1-6.2-1 1 6.1 6.3-6.5 6.7 1 1 6.5-6.6 6.5 6.6 1-1z"></path></svg></button>
+						<div class="wp-block-navigation__responsive-container-content" id="modal-1-content">
+							<ul class="wp-block-navigation__container"><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/plugins/"><span class="wp-block-navigation-item__label">Plugins</span></a></li><li class="wp-block-navigation-item current-menu-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/themes/"><span class="wp-block-navigation-item__label">Themes</span></a></li><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/patterns/"><span class="wp-block-navigation-item__label">Patterns</span></a></li><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://learn.wordpress.org/"><span class="wp-block-navigation-item__label">Learn</span></a></li><li class="wp-block-navigation-item has-child wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/support/"><span class="wp-block-navigation-item__label">Support</span></a><span class="wp-block-navigation__submenu-icon"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true" focusable="false"><path d="M1.50002 4L6.00002 8L10.5 4" stroke-width="1.5"></path></svg></span><ul class="wp-block-navigation__submenu-container"><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/support/"><span class="wp-block-navigation-item__label">Documentation</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/support/forums/"><span class="wp-block-navigation-item__label">Forums</span></a></li></ul></li><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/news/"><span class="wp-block-navigation-item__label">News</span></a></li><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/about/"><span class="wp-block-navigation-item__label">About</span></a></li><li class="wp-block-navigation-item has-child wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://make.wordpress.org/"><span class="wp-block-navigation-item__label">Get Involved</span></a><span class="wp-block-navigation__submenu-icon"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true" focusable="false"><path d="M1.50002 4L6.00002 8L10.5 4" stroke-width="1.5"></path></svg></span><ul class="wp-block-navigation__submenu-container"><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/five-for-the-future/"><span class="wp-block-navigation-item__label">Five for the Future</span></a></li></ul></li><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/showcase/"><span class="wp-block-navigation-item__label">Showcase</span></a></li><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/mobile/"><span class="wp-block-navigation-item__label">Mobile</span></a></li><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/hosting/"><span class="wp-block-navigation-item__label">Hosting</span></a></li><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/openverse/"><span class="wp-block-navigation-item__label">Openverse</span></a></li><li class=" wp-block-navigation-item global-header__mobile-get-wordpress global-header__get-wordpress wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/downloads/"><span class="wp-block-navigation-item__label">Get WordPress</span></a></li></ul>
+						</div>
+					</div>
+				</div>
+			</div></nav>
+
+		<!--
+		The search block is inside a navigation menu because that provides the exact functionality the design
+		calls for. It also provides a consistent experience with the primary navigation menu, with respect to
+		keyboard navigation, ARIA states, etc. It also saves having to write custom code for all the interactions.
+	-->
+	<nav class="wp-container-4 is-responsive global-header__search wp-block-navigation"><button aria-haspopup="true" aria-label="Open Search" class="wp-block-navigation__responsive-container-open always-shown" data-micromodal-trigger="modal-3"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="7.5" width="16" height="1.5"></rect><rect x="4" y="15" width="16" height="1.5"></rect></svg></button>
+			<div class="wp-block-navigation__responsive-container hidden-by-default " style="" id="modal-3">
+				<div class="wp-block-navigation__responsive-close" tabindex="-1" data-micromodal-close="">
+					<div class="wp-block-navigation__responsive-dialog" aria-label="Menu">
+							<button aria-label="Close Search" data-micromodal-close="" class="wp-block-navigation__responsive-container-close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M13 11.8l6.1-6.3-1-1-6.1 6.2-6.1-6.2-1 1 6.1 6.3-6.5 6.7 1 1 6.5-6.6 6.5 6.6 1-1z"></path></svg></button>
+						<div class="wp-block-navigation__responsive-container-content" id="modal-3-content">
+							<form role="search" method="get" action="https://wordpress.org/search/do-search.php" class="wp-block-search__button-inside wp-block-search__icon-button wp-block-search"><label for="wp-block-search__input-2" class="wp-block-search__label">Search</label><div class="wp-block-search__inside-wrapper "><input type="search" id="wp-block-search__input-2" class="wp-block-search__input " name="s" value="" placeholder="Search WP.org..." required=""><button type="submit" class="wp-block-search__button  has-icon" aria-label="Search"><svg id="search-icon" class="search-icon" viewBox="0 0 24 24" width="24" height="24">
+					<path d="M13.5 6C10.5 6 8 8.5 8 11.5c0 1.1.3 2.1.9 3l-3.4 3 1 1.1 3.4-2.9c1 .9 2.2 1.4 3.6 1.4 3 0 5.5-2.5 5.5-5.5C19 8.5 16.5 6 13.5 6zm0 9.5c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4z"></path>
+				</svg></button></div></form>
+						</div>
+					</div>
+				</div>
+			</div></nav>
+	
+	<!-- This is the first of two Get WordPress buttons; the other is in the navigation menu.
+		 Two are needed because they have different DOM hierarchies at different breakpoints. -->
+	
+	<div class="wp-container-5 global-header__desktop-get-wordpress-container">
+		<a href="https://wordpress.org/downloads/" class="global-header__desktop-get-wordpress global-header__get-wordpress">
+			Get WordPress		</a>
+	</div> 
+</header> 
+<header id="masthead" class="site-header " role="banner">
+	<div class="site-branding">
+					<p class="site-title"><a href="https://wordpress.org/themes/" rel="home">Themes</a></p>
+			</div>
+</header>
+
+<nav id="site-navigation" class="main-navigation" role="navigation">
+	<ul id="menu-theme-directory" class="menu">
+		<li><a href="https://wordpress.org/themes/commercial/">Commercial Themes</a></li>
+	</ul>
+</nav>
+	<main id="themes" class="wrap">
+		<div class="wp-filter">
+			<h2 class="screen-reader-text">Themes List</h2>
+			<div class="filter-count">
+				<span class="count theme-count">1</span>
+			</div>
+
+			<ul class="filter-links">
+				<li><a href="https://wordpress.org/themes/" data-sort="popular">Popular</a></li>
+				<li><a href="https://wordpress.org/themes/browse/new/" data-sort="new">Latest</a></li>
+							</ul>
+
+			<a class="drawer-toggle" href="#">Feature Filter</a>
+
+			<div class="search-form"><label class="screen-reader-text" for="wp-filter-search-input">Search Themes</label><input placeholder="Search themes..." type="search" id="wp-filter-search-input" class="wp-filter-search"></div>
+
+			<div class="filter-drawer">
+				<div class="buttons">
+					<button type="button" disabled="disabled" class="apply-filters button button-secondary">Apply Filters<span></span></button>
+					<button type="button" class="clear-filters button button-secondary">Clear</button>
+				</div>
+
+				<div class="filtered-by">
+					<span>Filtering by:</span>
+					<div class="tags"></div>
+					<a href="#">Edit</a>
+				</div>
+
+								<div class="filter-group">
+					<h4>Layout</h4>
+					<ol class="feature-group">
+												<li>
+							<input type="checkbox" id="filter-id-grid-layout" value="grid-layout">
+							<label for="filter-id-grid-layout">Grid Layout</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-one-column" value="one-column">
+							<label for="filter-id-one-column">One Column</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-two-columns" value="two-columns">
+							<label for="filter-id-two-columns">Two Columns</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-three-columns" value="three-columns">
+							<label for="filter-id-three-columns">Three Columns</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-four-columns" value="four-columns">
+							<label for="filter-id-four-columns">Four Columns</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-left-sidebar" value="left-sidebar">
+							<label for="filter-id-left-sidebar">Left Sidebar</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-right-sidebar" value="right-sidebar">
+							<label for="filter-id-right-sidebar">Right Sidebar</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-wide-blocks" value="wide-blocks">
+							<label for="filter-id-wide-blocks">Wide Blocks</label>
+						</li>
+											</ol>
+				</div>
+								<div class="filter-group">
+					<h4>Features</h4>
+					<ol class="feature-group">
+												<li>
+							<input type="checkbox" id="filter-id-accessibility-ready" value="accessibility-ready">
+							<label for="filter-id-accessibility-ready">Accessibility Ready</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-block-patterns" value="block-patterns">
+							<label for="filter-id-block-patterns">Block Editor Patterns</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-block-styles" value="block-styles">
+							<label for="filter-id-block-styles">Block Editor Styles</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-buddypress" value="buddypress">
+							<label for="filter-id-buddypress">BuddyPress</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-custom-background" value="custom-background">
+							<label for="filter-id-custom-background">Custom Background</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-custom-colors" value="custom-colors">
+							<label for="filter-id-custom-colors">Custom Colors</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-custom-header" value="custom-header">
+							<label for="filter-id-custom-header">Custom Header</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-custom-logo" value="custom-logo">
+							<label for="filter-id-custom-logo">Custom Logo</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-custom-menu" value="custom-menu">
+							<label for="filter-id-custom-menu">Custom Menu</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-editor-style" value="editor-style">
+							<label for="filter-id-editor-style">Editor Style</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-featured-image-header" value="featured-image-header">
+							<label for="filter-id-featured-image-header">Featured Image Header</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-featured-images" value="featured-images">
+							<label for="filter-id-featured-images">Featured Images</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-flexible-header" value="flexible-header">
+							<label for="filter-id-flexible-header">Flexible Header</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-footer-widgets" value="footer-widgets">
+							<label for="filter-id-footer-widgets">Footer Widgets</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-front-page-post-form" value="front-page-post-form">
+							<label for="filter-id-front-page-post-form">Front Page Posting</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-full-site-editing" value="full-site-editing">
+							<label for="filter-id-full-site-editing">Full Site Editing</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-full-width-template" value="full-width-template">
+							<label for="filter-id-full-width-template">Full Width Template</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-microformats" value="microformats">
+							<label for="filter-id-microformats">Microformats</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-post-formats" value="post-formats">
+							<label for="filter-id-post-formats">Post Formats</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-rtl-language-support" value="rtl-language-support">
+							<label for="filter-id-rtl-language-support">RTL Language Support</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-sticky-post" value="sticky-post">
+							<label for="filter-id-sticky-post">Sticky Post</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-template-editing" value="template-editing">
+							<label for="filter-id-template-editing">Template Editing</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-theme-options" value="theme-options">
+							<label for="filter-id-theme-options">Theme Options</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-threaded-comments" value="threaded-comments">
+							<label for="filter-id-threaded-comments">Threaded Comments</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-translation-ready" value="translation-ready">
+							<label for="filter-id-translation-ready">Translation Ready</label>
+						</li>
+											</ol>
+				</div>
+								<div class="filter-group">
+					<h4>Subject</h4>
+					<ol class="feature-group">
+												<li>
+							<input type="checkbox" id="filter-id-blog" value="blog">
+							<label for="filter-id-blog">Blog</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-e-commerce" value="e-commerce">
+							<label for="filter-id-e-commerce">E-Commerce</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-education" value="education">
+							<label for="filter-id-education">Education</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-entertainment" value="entertainment">
+							<label for="filter-id-entertainment">Entertainment</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-food-and-drink" value="food-and-drink">
+							<label for="filter-id-food-and-drink">Food &amp; Drink</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-holiday" value="holiday">
+							<label for="filter-id-holiday">Holiday</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-news" value="news">
+							<label for="filter-id-news">News</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-photography" value="photography">
+							<label for="filter-id-photography">Photography</label>
+						</li>
+												<li>
+							<input type="checkbox" id="filter-id-portfolio" value="portfolio">
+							<label for="filter-id-portfolio">Portfolio</label>
+						</li>
+											</ol>
+				</div>
+							</div>
+		</div><!-- .wp-filter -->
+
+		<div class="theme-browser content-filterable rendered">
+			
+
+						<p class="no-themes">No themes found. Try a different search.</p>
+		<div class="themes"><div class="theme" tabindex="0" aria-describedby="rife-free-action rife-free-name">
+	<a class="url" href="/themes/rife-free/" rel="bookmark" tabindex="-1">
+		
+		<div class="theme-screenshot">
+			<img src="https://i0.wp.com/themes.svn.wordpress.org/rife-free/2.4.13/screenshot.png?w=572&amp;strip=all" loading="lazy" alt="">
+		</div>
+		
+		<span class="more-details">More Info</span>
+		
+		<div class="theme-author">By <span class="author">apollo13themes</span></div>
+		
+		<h3 class="theme-name entry-title">Rife Free</h3>
+	</a>
+	<div class="theme-actions">
+		<a class="button button-primary preview install-theme-preview" href="https://downloads.wordpress.org/theme/rife-free.2.4.13.zip">Download</a>
+	</div>
+</div></div></div>
+		<div class="theme-load-more">
+			<button class="button button-primary button-large js-load-more-themes" style="display: none;">Load more themes</button>
+		</div>
+		<div class="theme-install-overlay wp-full-overlay expanded" style="display: block;">
+	<div class="wp-full-overlay-sidebar">
+		<div class="wp-full-overlay-header">
+			<a href="#" class="close-full-overlay"><span class="screen-reader-text">Close</span></a>
+			<a href="#" class="previous-theme disabled"><span class="screen-reader-text">Previous</span></a>
+			<a href="#" class="next-theme disabled"><span class="screen-reader-text">Next</span></a>
+			<a href="//downloads.wordpress.org/theme/rife-free.2.4.13.zip" class="button button-primary theme-install">Download</a>
+		</div>
+		<div class="wp-full-overlay-sidebar-content">
+			<div class="install-theme-info">
+				<h3 class="theme-name">Rife Free</h3>
+				
+				<span class="theme-by">By apollo13themes</span>
+				
+
+				<img class="theme-screenshot" src="https://i0.wp.com/themes.svn.wordpress.org/rife-free/2.4.13/screenshot.png?w=520&amp;strip=all" loading="lazy" alt="">
+
+				<div class="theme-details">
+					<div class="rating rating-100">
+						<span class="one"></span>
+						<span class="two"></span>
+						<span class="three"></span>
+						<span class="four"></span>
+						<span class="five"></span>
+
+						
+						<small class="ratings"></small>
+						
+					</div>
+					<div class="theme-version">Version: 2.4.13</div>
+					<div class="theme-description">Rife Free is a great portfolio and photography WP theme with 7 ready-to-use demo layouts. It is also perfect for business, blogging websites and for your shop because it is WooCommerce compatible. More cool features in the Rife theme are the: ✓ Writing Effect ✓ One Page Mode ✓ Mobile/Touch Friendly Image &amp; Video Slider ✓ Bricks Gallery for Photographers ✓ Mega Menu ✓ Post Grid ✓ Google Fonts ✓ Hidden Sidebar and many more. Over 450 options to change in the Customizer and much more in each page, post, album or work. We also integrate Schema.org which helps your website be more visible to search engines. Elementor compatibility will help you make your great website even more natural. The theme is RTL and translation-ready (WPML). ★ Check our demos for more details: https://apollo13themes.com/rife/designs/</div>
+				</div>
+			</div>
+		</div>
+		<div class="wp-full-overlay-footer">
+			<a href="#" class="collapse-sidebar" title="Collapse Sidebar">
+				<span class="collapse-sidebar-label">Collapse</span>
+				<span class="collapse-sidebar-arrow"></span>
+			</a>
+		</div>
+	</div>
+	<div class="wp-full-overlay-main">
+		<iframe src="https://wp-themes.com/rife-free/">
+	</div>
+</iframe></div></div>
+		<div class="theme-overlay"><div class="theme-overlay">
+	<div class="theme-navigation">
+		<button class="close">Return to Themes List</button>
+		<div class="navigation post-navigation">
+			<button class="left dashicons dashicons-arrow-left-alt2 disabled"><span class="screen-reader-text">Show previous theme</span></button>
+			<button class="right dashicons dashicons-arrow-right-alt2 disabled"><span class="screen-reader-text">Show next theme</span></button>
+		</div>
+	</div>
+	<div class="theme-wrap">
+		<div class="theme-about hentry">
+			
+
+			<div>
+				<h2 class="theme-name entry-title">Rife Free</h2>
+				
+				<div class="theme-author">By <a href="/themes/author/apollo13themes/"><span class="author">apollo13themes</span></a></div>
+				
+
+				
+			</div>
+
+			<div class="theme-head">
+				<div class="theme-actions clear">
+					<a href="https://wp-themes.com/rife-free/" class="button button-secondary alignleft">Preview</a>
+					<a href="https://downloads.wordpress.org/theme/rife-free.2.4.13.zip" class="button button-primary alignright">Download</a>
+				</div>
+
+				
+
+				<div class="theme-meta-info">
+					<p class="version">Version: <strong>2.4.13</strong></p>
+					<p class="updated">Last updated: <strong>September 1, 2021</strong></p>
+					<p class="active_installs">Active Installations: <strong>30.000+</strong></p>
+					
+					<p class="requires">WordPress Version: <strong>4.7 or higher</strong></p>
+					
+					
+					<p class="requires_php">PHP Version: <strong>5.3.0 or higher</strong></p>
+					
+					
+					<p class="theme_homepage"><a href="https://apollo13themes.com/rife/free/">Theme Homepage</a></p>
+					
+				</div>
+			</div><!-- .theme-head -->
+
+			<div class="theme-info">
+				
+				<div class="screenshot">
+					<picture>
+						<source media="(min-width: 782px)" srcset="https://i0.wp.com/themes.svn.wordpress.org/rife-free/2.4.13/screenshot.png?w=572&amp;strip=all, https://i0.wp.com/themes.svn.wordpress.org/rife-free/2.4.13/screenshot.png?w=1144&amp;strip=all 2x">
+						<source media="(min-width: 481px) and (max-width: 782px)" srcset="https://i0.wp.com/themes.svn.wordpress.org/rife-free/2.4.13/screenshot.png?w=700&amp;strip=all, https://i0.wp.com/themes.svn.wordpress.org/rife-free/2.4.13/screenshot.png?w=1400&amp;strip=all 2x">
+						<source media="(min-width: 401px) and (max-width: 480px)" srcset="https://i0.wp.com/themes.svn.wordpress.org/rife-free/2.4.13/screenshot.png?w=420&amp;strip=all, https://i0.wp.com/themes.svn.wordpress.org/rife-free/2.4.13/screenshot.png?w=840&amp;strip=all 2x">
+						<source media="(max-width: 400px)" srcset="https://i0.wp.com/themes.svn.wordpress.org/rife-free/2.4.13/screenshot.png?w=344&amp;strip=all, https://i0.wp.com/themes.svn.wordpress.org/rife-free/2.4.13/screenshot.png?w=688&amp;strip=all 2x">
+						<img src="https://i0.wp.com/themes.svn.wordpress.org/rife-free/2.4.13/screenshot.png?w=572&amp;strip=all" srcset="https://i0.wp.com/themes.svn.wordpress.org/rife-free/2.4.13/screenshot.png?w=1144&amp;strip=all 2x" loading="lazy" alt="">
+					</picture>
+				</div>
+				
+
+				<div class="theme-description entry-summary"><p>Rife Free is a great portfolio and photography WP theme with 7 ready-to-use demo layouts. It is also perfect for business, blogging websites and for your shop because it is WooCommerce compatible. More cool features in the Rife theme are the: ✓ Writing Effect ✓ One Page Mode ✓ Mobile/Touch Friendly Image &amp; Video Slider ✓ Bricks Gallery for Photographers ✓ Mega Menu ✓ Post Grid ✓ Google Fonts ✓ Hidden Sidebar and many more. Over 450 options to change in the Customizer and much more in each page, post, album or work. We also integrate Schema.org which helps your website be more visible to search engines. Elementor compatibility will help you make your great website even more natural. The theme is RTL and translation-ready (WPML). ★ Check our demos for more details: https://apollo13themes.com/rife/designs/</p></div>
+
+				
+				<div class="theme-tags">
+					<h3>Tags:</h3>
+					<a href="/themes/tags/custom-colors/">Custom Colors</a>, <a href="/themes/tags/custom-menu/">Custom Menu</a>, <a href="/themes/tags/e-commerce/">E-Commerce</a>, <a href="/themes/tags/featured-images/">Featured Images</a>, <a href="/themes/tags/footer-widgets/">Footer Widgets</a>, <a href="/themes/tags/full-width-template/">Full Width Template</a>, <a href="/themes/tags/grid-layout/">Grid Layout</a>, <a href="/themes/tags/left-sidebar/">Left Sidebar</a>, <a href="/themes/tags/photography/">Photography</a>, <a href="/themes/tags/portfolio/">Portfolio</a>, <a href="/themes/tags/post-formats/">Post Formats</a>, <a href="/themes/tags/right-sidebar/">Right Sidebar</a>, <a href="/themes/tags/rtl-language-support/">RTL Language Support</a>, <a href="/themes/tags/sticky-post/">Sticky Post</a>, <a href="/themes/tags/theme-options/">Theme Options</a>, <a href="/themes/tags/threaded-comments/">Threaded Comments</a>, <a href="/themes/tags/three-columns/">Three Columns</a>, <a href="/themes/tags/translation-ready/">Translation Ready</a>, <a href="/themes/tags/two-columns/">Two Columns</a>
+				</div><!-- .theme-tags -->
+				
+
+				<div class="theme-downloads">
+					<h3>Downloads Per Day</h3>
+					<div id="theme-download-stats-rife-free" class="chart"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 574px; height: 350px;"><div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;" aria-label="A chart."><svg width="574" height="350" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_0"><clipPath id="_ABSTRACT_RENDERER_ID_1"><rect x="35" y="35" width="539" height="280"></rect></clipPath></defs><rect x="0" y="0" width="574" height="350" stroke="none" stroke-width="0" fill="#ffffff"></rect><g><rect x="35" y="35" width="539" height="280" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://wordpress.org/themes/rife-free/#_ABSTRACT_RENDERER_ID_1)"><g><rect x="35" y="314" width="539" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="35" y="244" width="539" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="35" y="175" width="539" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="35" y="105" width="539" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="35" y="35" width="539" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="35" y="279" width="539" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="35" y="209" width="539" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="35" y="140" width="539" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="35" y="70" width="539" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect></g><g><rect x="35.5" y="283" width="2" height="31" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="37.5" y="290" width="2" height="24" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="39.5" y="293" width="2" height="21" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="41.5" y="291" width="2" height="23" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="43.5" y="281" width="2" height="33" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="45.5" y="283" width="2" height="31" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="47.5" y="283" width="2" height="31" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="50.5" y="285" width="2" height="29" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="52.5" y="291" width="2" height="23" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="54.5" y="294" width="2" height="20" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="56.5" y="292" width="2" height="22" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="58.5" y="287" width="2" height="27" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="60.5" y="282" width="2" height="32" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="62.5" y="281" width="2" height="33" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="64.5" y="282" width="2" height="32" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="66.5" y="289" width="2" height="25" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="68.5" y="295" width="2" height="19" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="70.5" y="297" width="2" height="17" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="72.5" y="290" width="2" height="24" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="74.5" y="283" width="2" height="31" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="77.5" y="286" width="2" height="28" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="79.5" y="278" width="2" height="36" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="81.5" y="288" width="2" height="26" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="83.5" y="291" width="2" height="23" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="85.5" y="291" width="2" height="23" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="87.5" y="282" width="2" height="32" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="89.5" y="284" width="2" height="30" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="91.5" y="281" width="2" height="33" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="93.5" y="284" width="2" height="30" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="95.5" y="284" width="2" height="30" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="97.5" y="289" width="2" height="25" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="99.5" y="289" width="2" height="25" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="101.5" y="279" width="2" height="35" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="104.5" y="277" width="2" height="37" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="106.5" y="275" width="2" height="39" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="108.5" y="281" width="2" height="33" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="110.5" y="283" width="2" height="31" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="112.5" y="289" width="2" height="25" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="114.5" y="288" width="2" height="26" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="116.5" y="281" width="2" height="33" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="118.5" y="280" width="2" height="34" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="120.5" y="277" width="2" height="37" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="122.5" y="281" width="2" height="33" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="124.5" y="281" width="2" height="33" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="126.5" y="289" width="2" height="25" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="128.5" y="288" width="2" height="26" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="131.5" y="282" width="2" height="32" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="133.5" y="278" width="2" height="36" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="135.5" y="277" width="2" height="37" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="137.5" y="281" width="2" height="33" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="139.5" y="283" width="2" height="31" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="141.5" y="289" width="2" height="25" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="143.5" y="289" width="2" height="25" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="145.5" y="282" width="2" height="32" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="147.5" y="276" width="2" height="38" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="149.5" y="277" width="2" height="37" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="151.5" y="278" width="2" height="36" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="153.5" y="285" width="2" height="29" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="155.5" y="299" width="2" height="15" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="158.5" y="291" width="2" height="23" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="160.5" y="281" width="2" height="33" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="162.5" y="279" width="2" height="35" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="164.5" y="280" width="2" height="34" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="166.5" y="281" width="2" height="33" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="168.5" y="288" width="2" height="26" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="170.5" y="291" width="2" height="23" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="172.5" y="291" width="2" height="23" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="174.5" y="286" width="2" height="28" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="176.5" y="279" width="2" height="35" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="178.5" y="280" width="2" height="34" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="180.5" y="76" width="2" height="238" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="182.5" y="104" width="2" height="210" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="185.5" y="253" width="2" height="61" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="187.5" y="264" width="2" height="50" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="189.5" y="235" width="2" height="79" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="191.5" y="242" width="2" height="72" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="193.5" y="253" width="2" height="61" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="195.5" y="247" width="2" height="67" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="197.5" y="259" width="2" height="55" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="199.5" y="278" width="2" height="36" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="201.5" y="272" width="2" height="42" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="203.5" y="254" width="2" height="60" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="205.5" y="258" width="2" height="56" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="207.5" y="262" width="2" height="52" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="209.5" y="261" width="2" height="53" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="212.5" y="271" width="2" height="43" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="214.5" y="277" width="2" height="37" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="216.5" y="280" width="2" height="34" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="218.5" y="260" width="2" height="54" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="220.5" y="264" width="2" height="50" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="222.5" y="265" width="2" height="49" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="224.5" y="264" width="2" height="50" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="226.5" y="264" width="2" height="50" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="228.5" y="286" width="2" height="28" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="230.5" y="285" width="2" height="29" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="232.5" y="264" width="2" height="50" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="234.5" y="269" width="2" height="45" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="236.5" y="267" width="2" height="47" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="239.5" y="272" width="2" height="42" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="241.5" y="270" width="2" height="44" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="243.5" y="283" width="2" height="31" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="245.5" y="281" width="2" height="33" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="247.5" y="264" width="2" height="50" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="249.5" y="267" width="2" height="47" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="251.5" y="270" width="2" height="44" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="253.5" y="267" width="2" height="47" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="255.5" y="275" width="2" height="39" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="257.5" y="282" width="2" height="32" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="259.5" y="286" width="2" height="28" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="261.5" y="274" width="2" height="40" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="263.5" y="272" width="2" height="42" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="266.5" y="268" width="2" height="46" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="268.5" y="272" width="2" height="42" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="270.5" y="279" width="2" height="35" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="272.5" y="290" width="2" height="24" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="274.5" y="283" width="2" height="31" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="276.5" y="272" width="2" height="42" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="278.5" y="267" width="2" height="47" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="280.5" y="270" width="2" height="44" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="282.5" y="275" width="2" height="39" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="284.5" y="273" width="2" height="41" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="286.5" y="288" width="2" height="26" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="288.5" y="286" width="2" height="28" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="290.5" y="276" width="2" height="38" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="293.5" y="275" width="2" height="39" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="295.5" y="276" width="2" height="38" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="297.5" y="274" width="2" height="40" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="299.5" y="280" width="2" height="34" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="301.5" y="292" width="2" height="22" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="303.5" y="291" width="2" height="23" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="305.5" y="276" width="2" height="38" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="307.5" y="278" width="2" height="36" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="309.5" y="275" width="2" height="39" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="311.5" y="273" width="2" height="41" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="313.5" y="280" width="2" height="34" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="315.5" y="289" width="2" height="25" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="318.5" y="286" width="2" height="28" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="320.5" y="277" width="2" height="37" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="322.5" y="272" width="2" height="42" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="324.5" y="276" width="2" height="38" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="326.5" y="278" width="2" height="36" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="328.5" y="277" width="2" height="37" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="330.5" y="287" width="2" height="27" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="332.5" y="286" width="2" height="28" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="334.5" y="278" width="2" height="36" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="336.5" y="269" width="2" height="45" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="338.5" y="273" width="2" height="41" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="340.5" y="277" width="2" height="37" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="342.5" y="280" width="2" height="34" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="345.5" y="286" width="2" height="28" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="347.5" y="288" width="2" height="26" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="349.5" y="276" width="2" height="38" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="351.5" y="276" width="2" height="38" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="353.5" y="275" width="2" height="39" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="355.5" y="280" width="2" height="34" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="357.5" y="282" width="2" height="32" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="359.5" y="288" width="2" height="26" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="361.5" y="288" width="2" height="26" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="363.5" y="276" width="2" height="38" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="365.5" y="274" width="2" height="40" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="367.5" y="278" width="2" height="36" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="369.5" y="279" width="2" height="35" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="372.5" y="283" width="2" height="31" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="374.5" y="288" width="2" height="26" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="376.5" y="290" width="2" height="24" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="378.5" y="276" width="2" height="38" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="380.5" y="279" width="2" height="35" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="382.5" y="281" width="2" height="33" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="384.5" y="281" width="2" height="33" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="386.5" y="282" width="2" height="32" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="388.5" y="288" width="2" height="26" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="390.5" y="289" width="2" height="25" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="392.5" y="279" width="2" height="35" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="394.5" y="278" width="2" height="36" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="396.5" y="280" width="2" height="34" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="399.5" y="281" width="2" height="33" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="401.5" y="286" width="2" height="28" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="403.5" y="292" width="2" height="22" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="405.5" y="296" width="2" height="18" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="407.5" y="288" width="2" height="26" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="409.5" y="283" width="2" height="31" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="411.5" y="287" width="2" height="27" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="413.5" y="289" width="2" height="25" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="415.5" y="295" width="2" height="19" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="417.5" y="299" width="2" height="15" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="419.5" y="293" width="2" height="21" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="421.5" y="281" width="2" height="33" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="423.5" y="282" width="2" height="32" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="426.5" y="282" width="2" height="32" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="428.5" y="284" width="2" height="30" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="430.5" y="294" width="2" height="20" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="432.5" y="297" width="2" height="17" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="434.5" y="290" width="2" height="24" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="436.5" y="280" width="2" height="34" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="438.5" y="280" width="2" height="34" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="440.5" y="278" width="2" height="36" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="442.5" y="281" width="2" height="33" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="444.5" y="282" width="2" height="32" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="446.5" y="287" width="2" height="27" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="448.5" y="288" width="2" height="26" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="450.5" y="278" width="2" height="36" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="453.5" y="279" width="2" height="35" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="455.5" y="276" width="2" height="38" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="457.5" y="280" width="2" height="34" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="459.5" y="282" width="2" height="32" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="461.5" y="288" width="2" height="26" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="463.5" y="287" width="2" height="27" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="465.5" y="278" width="2" height="36" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="467.5" y="279" width="2" height="35" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="469.5" y="272" width="2" height="42" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="471.5" y="276" width="2" height="38" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="473.5" y="280" width="2" height="34" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="475.5" y="288" width="2" height="26" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="477.5" y="288" width="2" height="26" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="480.5" y="278" width="2" height="36" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="482.5" y="276" width="2" height="38" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="484.5" y="274" width="2" height="40" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="486.5" y="274" width="2" height="40" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="488.5" y="275" width="2" height="39" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="490.5" y="287" width="2" height="27" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="492.5" y="288" width="2" height="26" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="494.5" y="278" width="2" height="36" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="496.5" y="281" width="2" height="33" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="498.5" y="279" width="2" height="35" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="500.5" y="278" width="2" height="36" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="502.5" y="283" width="2" height="31" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="504.5" y="287" width="2" height="27" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="507.5" y="287" width="2" height="27" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="509.5" y="282" width="2" height="32" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="511.5" y="276" width="2" height="38" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="513.5" y="279" width="2" height="35" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="515.5" y="277" width="2" height="37" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="517.5" y="281" width="2" height="33" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="519.5" y="290" width="2" height="24" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="521.5" y="287" width="2" height="27" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="523.5" y="279" width="2" height="35" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="525.5" y="280" width="2" height="34" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="527.5" y="276" width="2" height="38" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="529.5" y="280" width="2" height="34" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="531.5" y="279" width="2" height="35" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="534.5" y="284" width="2" height="30" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="536.5" y="289" width="2" height="25" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="538.5" y="278" width="2" height="36" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="540.5" y="276" width="2" height="38" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="542.5" y="279" width="2" height="35" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="544.5" y="279" width="2" height="35" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="546.5" y="285" width="2" height="29" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="548.5" y="289" width="2" height="25" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="550.5" y="291" width="2" height="23" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="552.5" y="286" width="2" height="28" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="554.5" y="281" width="2" height="33" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="556.5" y="281" width="2" height="33" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="558.5" y="277" width="2" height="37" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="561.5" y="282" width="2" height="32" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="563.5" y="291" width="2" height="23" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="565.5" y="292" width="2" height="22" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="567.5" y="284" width="2" height="30" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="569.5" y="285" width="2" height="29" stroke="none" stroke-width="0" fill="#253578"></rect><rect x="571.5" y="283" width="2" height="31" stroke="none" stroke-width="0" fill="#253578"></rect></g><g><rect x="35" y="314" width="539" height="1" stroke="none" stroke-width="0" fill="#333333"></rect></g></g><g></g><g><g><text text-anchor="end" x="38.11361003861004" y="324.227980021921" font-family="Arial" font-size="9" transform="rotate(-30 38.11361003861004 324.227980021921)" stroke="none" stroke-width="0" fill="#000000">23/06/2021</text></g><g><text text-anchor="end" x="60.963030888030886" y="324.227980021921" font-family="Arial" font-size="9" transform="rotate(-30 60.963030888030886 324.227980021921)" stroke="none" stroke-width="0" fill="#000000">04/07/2021</text></g><g><text text-anchor="end" x="83.81245173745174" y="324.227980021921" font-family="Arial" font-size="9" transform="rotate(-30 83.81245173745174 324.227980021921)" stroke="none" stroke-width="0" fill="#000000">15/07/2021</text></g><g><text text-anchor="end" x="106.66187258687259" y="324.227980021921" font-family="Arial" font-size="9" transform="rotate(-30 106.66187258687259 324.227980021921)" stroke="none" stroke-width="0" fill="#000000">26/07/2021</text></g><g><text text-anchor="end" x="129.5112934362934" y="324.227980021921" font-family="Arial" font-size="9" transform="rotate(-30 129.5112934362934 324.227980021921)" stroke="none" stroke-width="0" fill="#000000">06/08/2021</text></g><g><text text-anchor="end" x="152.36071428571427" y="324.227980021921" font-family="Arial" font-size="9" transform="rotate(-30 152.36071428571427 324.227980021921)" stroke="none" stroke-width="0" fill="#000000">17/08/2021</text></g><g><text text-anchor="end" x="175.21013513513512" y="324.227980021921" font-family="Arial" font-size="9" transform="rotate(-30 175.21013513513512 324.227980021921)" stroke="none" stroke-width="0" fill="#000000">28/08/2021</text></g><g><text text-anchor="end" x="198.05955598455597" y="324.227980021921" font-family="Arial" font-size="9" transform="rotate(-30 198.05955598455597 324.227980021921)" stroke="none" stroke-width="0" fill="#000000">08/09/2021</text></g><g><text text-anchor="end" x="220.90897683397682" y="324.227980021921" font-family="Arial" font-size="9" transform="rotate(-30 220.90897683397682 324.227980021921)" stroke="none" stroke-width="0" fill="#000000">19/09/2021</text></g><g><text text-anchor="end" x="243.75839768339765" y="324.227980021921" font-family="Arial" font-size="9" transform="rotate(-30 243.75839768339765 324.227980021921)" stroke="none" stroke-width="0" fill="#000000">30/09/2021</text></g><g><text text-anchor="end" x="266.6078185328185" y="324.227980021921" font-family="Arial" font-size="9" transform="rotate(-30 266.6078185328185 324.227980021921)" stroke="none" stroke-width="0" fill="#000000">11/10/2021</text></g><g><text text-anchor="end" x="289.4572393822394" y="324.227980021921" font-family="Arial" font-size="9" transform="rotate(-30 289.4572393822394 324.227980021921)" stroke="none" stroke-width="0" fill="#000000">22/10/2021</text></g><g><text text-anchor="end" x="312.3066602316602" y="324.227980021921" font-family="Arial" font-size="9" transform="rotate(-30 312.3066602316602 324.227980021921)" stroke="none" stroke-width="0" fill="#000000">02/11/2021</text></g><g><text text-anchor="end" x="335.156081081081" y="324.227980021921" font-family="Arial" font-size="9" transform="rotate(-30 335.156081081081 324.227980021921)" stroke="none" stroke-width="0" fill="#000000">13/11/2021</text></g><g><text text-anchor="end" x="358.0055019305019" y="324.227980021921" font-family="Arial" font-size="9" transform="rotate(-30 358.0055019305019 324.227980021921)" stroke="none" stroke-width="0" fill="#000000">24/11/2021</text></g><g><text text-anchor="end" x="380.85492277992273" y="324.227980021921" font-family="Arial" font-size="9" transform="rotate(-30 380.85492277992273 324.227980021921)" stroke="none" stroke-width="0" fill="#000000">05/12/2021</text></g><g><text text-anchor="end" x="403.7043436293436" y="324.227980021921" font-family="Arial" font-size="9" transform="rotate(-30 403.7043436293436 324.227980021921)" stroke="none" stroke-width="0" fill="#000000">16/12/2021</text></g><g><text text-anchor="end" x="426.55376447876444" y="324.227980021921" font-family="Arial" font-size="9" transform="rotate(-30 426.55376447876444 324.227980021921)" stroke="none" stroke-width="0" fill="#000000">27/12/2021</text></g><g><text text-anchor="end" x="449.40318532818526" y="324.227980021921" font-family="Arial" font-size="9" transform="rotate(-30 449.40318532818526 324.227980021921)" stroke="none" stroke-width="0" fill="#000000">07/01/2022</text></g><g><text text-anchor="end" x="472.25260617760614" y="324.227980021921" font-family="Arial" font-size="9" transform="rotate(-30 472.25260617760614 324.227980021921)" stroke="none" stroke-width="0" fill="#000000">18/01/2022</text></g><g><text text-anchor="end" x="495.10202702702696" y="324.227980021921" font-family="Arial" font-size="9" transform="rotate(-30 495.10202702702696 324.227980021921)" stroke="none" stroke-width="0" fill="#000000">29/01/2022</text></g><g><text text-anchor="end" x="517.9514478764479" y="324.227980021921" font-family="Arial" font-size="9" transform="rotate(-30 517.9514478764479 324.227980021921)" stroke="none" stroke-width="0" fill="#000000">09/02/2022</text></g><g><text text-anchor="end" x="540.8008687258687" y="324.227980021921" font-family="Arial" font-size="9" transform="rotate(-30 540.8008687258687 324.227980021921)" stroke="none" stroke-width="0" fill="#000000">20/02/2022</text></g><g><text text-anchor="end" x="563.6502895752895" y="324.227980021921" font-family="Arial" font-size="9" transform="rotate(-30 563.6502895752895 324.227980021921)" stroke="none" stroke-width="0" fill="#000000">03/03/2022</text></g><g><text text-anchor="end" x="32.5" y="318.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">0</text></g><g><text text-anchor="end" x="32.5" y="248.95" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">500</text></g><g><text text-anchor="end" x="32.5" y="179.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">1,000</text></g><g><text text-anchor="end" x="32.5" y="109.45" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">1,500</text></g><g><text text-anchor="end" x="32.5" y="39.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">2,000</text></g></g></g><g></g></svg><div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;"><table><thead><tr><th>Date</th><th>Downloads</th></tr></thead><tbody><tr><td>23/06/2021</td><td>230</td></tr><tr><td>24/06/2021</td><td>179</td></tr><tr><td>25/06/2021</td><td>159</td></tr><tr><td>26/06/2021</td><td>171</td></tr><tr><td>27/06/2021</td><td>243</td></tr><tr><td>28/06/2021</td><td>231</td></tr><tr><td>29/06/2021</td><td>230</td></tr><tr><td>30/06/2021</td><td>213</td></tr><tr><td>01/07/2021</td><td>174</td></tr><tr><td>02/07/2021</td><td>150</td></tr><tr><td>03/07/2021</td><td>163</td></tr><tr><td>04/07/2021</td><td>202</td></tr><tr><td>05/07/2021</td><td>240</td></tr><tr><td>06/07/2021</td><td>244</td></tr><tr><td>07/07/2021</td><td>239</td></tr><tr><td>08/07/2021</td><td>186</td></tr><tr><td>09/07/2021</td><td>142</td></tr><tr><td>10/07/2021</td><td>132</td></tr><tr><td>11/07/2021</td><td>180</td></tr><tr><td>12/07/2021</td><td>227</td></tr><tr><td>13/07/2021</td><td>207</td></tr><tr><td>14/07/2021</td><td>266</td></tr><tr><td>15/07/2021</td><td>196</td></tr><tr><td>16/07/2021</td><td>169</td></tr><tr><td>17/07/2021</td><td>171</td></tr><tr><td>18/07/2021</td><td>236</td></tr><tr><td>19/07/2021</td><td>219</td></tr><tr><td>20/07/2021</td><td>241</td></tr><tr><td>21/07/2021</td><td>224</td></tr><tr><td>22/07/2021</td><td>220</td></tr><tr><td>23/07/2021</td><td>184</td></tr><tr><td>24/07/2021</td><td>187</td></tr><tr><td>25/07/2021</td><td>259</td></tr><tr><td>26/07/2021</td><td>270</td></tr><tr><td>27/07/2021</td><td>286</td></tr><tr><td>28/07/2021</td><td>243</td></tr><tr><td>29/07/2021</td><td>231</td></tr><tr><td>30/07/2021</td><td>183</td></tr><tr><td>31/07/2021</td><td>194</td></tr><tr><td>01/08/2021</td><td>246</td></tr><tr><td>02/08/2021</td><td>248</td></tr><tr><td>03/08/2021</td><td>275</td></tr><tr><td>04/08/2021</td><td>246</td></tr><tr><td>05/08/2021</td><td>244</td></tr><tr><td>06/08/2021</td><td>189</td></tr><tr><td>07/08/2021</td><td>197</td></tr><tr><td>08/08/2021</td><td>236</td></tr><tr><td>09/08/2021</td><td>268</td></tr><tr><td>10/08/2021</td><td>275</td></tr><tr><td>11/08/2021</td><td>247</td></tr><tr><td>12/08/2021</td><td>232</td></tr><tr><td>13/08/2021</td><td>183</td></tr><tr><td>14/08/2021</td><td>183</td></tr><tr><td>15/08/2021</td><td>233</td></tr><tr><td>16/08/2021</td><td>282</td></tr><tr><td>17/08/2021</td><td>270</td></tr><tr><td>18/08/2021</td><td>265</td></tr><tr><td>19/08/2021</td><td>217</td></tr><tr><td>20/08/2021</td><td>117</td></tr><tr><td>21/08/2021</td><td>174</td></tr><tr><td>22/08/2021</td><td>241</td></tr><tr><td>23/08/2021</td><td>257</td></tr><tr><td>24/08/2021</td><td>250</td></tr><tr><td>25/08/2021</td><td>243</td></tr><tr><td>26/08/2021</td><td>191</td></tr><tr><td>27/08/2021</td><td>170</td></tr><tr><td>28/08/2021</td><td>175</td></tr><tr><td>29/08/2021</td><td>205</td></tr><tr><td>30/08/2021</td><td>257</td></tr><tr><td>31/08/2021</td><td>254</td></tr><tr><td>01/09/2021</td><td>1,711</td></tr><tr><td>02/09/2021</td><td>1,510</td></tr><tr><td>03/09/2021</td><td>442</td></tr><tr><td>04/09/2021</td><td>365</td></tr><tr><td>05/09/2021</td><td>572</td></tr><tr><td>06/09/2021</td><td>522</td></tr><tr><td>07/09/2021</td><td>447</td></tr><tr><td>08/09/2021</td><td>491</td></tr><tr><td>09/09/2021</td><td>402</td></tr><tr><td>10/09/2021</td><td>262</td></tr><tr><td>11/09/2021</td><td>309</td></tr><tr><td>12/09/2021</td><td>436</td></tr><tr><td>13/09/2021</td><td>407</td></tr><tr><td>14/09/2021</td><td>380</td></tr><tr><td>15/09/2021</td><td>388</td></tr><tr><td>16/09/2021</td><td>313</td></tr><tr><td>17/09/2021</td><td>269</td></tr><tr><td>18/09/2021</td><td>251</td></tr><tr><td>19/09/2021</td><td>391</td></tr><tr><td>20/09/2021</td><td>367</td></tr><tr><td>21/09/2021</td><td>359</td></tr><tr><td>22/09/2021</td><td>367</td></tr><tr><td>23/09/2021</td><td>365</td></tr><tr><td>24/09/2021</td><td>205</td></tr><tr><td>25/09/2021</td><td>214</td></tr><tr><td>26/09/2021</td><td>368</td></tr><tr><td>27/09/2021</td><td>330</td></tr><tr><td>28/09/2021</td><td>343</td></tr><tr><td>29/09/2021</td><td>311</td></tr><tr><td>30/09/2021</td><td>322</td></tr><tr><td>01/10/2021</td><td>231</td></tr><tr><td>02/10/2021</td><td>242</td></tr><tr><td>03/10/2021</td><td>363</td></tr><tr><td>04/10/2021</td><td>347</td></tr><tr><td>05/10/2021</td><td>323</td></tr><tr><td>06/10/2021</td><td>344</td></tr><tr><td>07/10/2021</td><td>286</td></tr><tr><td>08/10/2021</td><td>237</td></tr><tr><td>09/10/2021</td><td>209</td></tr><tr><td>10/10/2021</td><td>292</td></tr><tr><td>11/10/2021</td><td>311</td></tr><tr><td>12/10/2021</td><td>339</td></tr><tr><td>13/10/2021</td><td>311</td></tr><tr><td>14/10/2021</td><td>257</td></tr><tr><td>15/10/2021</td><td>176</td></tr><tr><td>16/10/2021</td><td>232</td></tr><tr><td>17/10/2021</td><td>307</td></tr><tr><td>18/10/2021</td><td>347</td></tr><tr><td>19/10/2021</td><td>319</td></tr><tr><td>20/10/2021</td><td>287</td></tr><tr><td>21/10/2021</td><td>299</td></tr><tr><td>22/10/2021</td><td>190</td></tr><tr><td>23/10/2021</td><td>210</td></tr><tr><td>24/10/2021</td><td>282</td></tr><tr><td>25/10/2021</td><td>290</td></tr><tr><td>26/10/2021</td><td>281</td></tr><tr><td>27/10/2021</td><td>295</td></tr><tr><td>28/10/2021</td><td>251</td></tr><tr><td>29/10/2021</td><td>162</td></tr><tr><td>30/10/2021</td><td>175</td></tr><tr><td>31/10/2021</td><td>276</td></tr><tr><td>01/11/2021</td><td>264</td></tr><tr><td>02/11/2021</td><td>286</td></tr><tr><td>03/11/2021</td><td>300</td></tr><tr><td>04/11/2021</td><td>250</td></tr><tr><td>05/11/2021</td><td>184</td></tr><tr><td>06/11/2021</td><td>210</td></tr><tr><td>07/11/2021</td><td>273</td></tr><tr><td>08/11/2021</td><td>308</td></tr><tr><td>09/11/2021</td><td>281</td></tr><tr><td>10/11/2021</td><td>268</td></tr><tr><td>11/11/2021</td><td>275</td></tr><tr><td>12/11/2021</td><td>199</td></tr><tr><td>13/11/2021</td><td>207</td></tr><tr><td>14/11/2021</td><td>268</td></tr><tr><td>15/11/2021</td><td>332</td></tr><tr><td>16/11/2021</td><td>304</td></tr><tr><td>17/11/2021</td><td>271</td></tr><tr><td>18/11/2021</td><td>251</td></tr><tr><td>19/11/2021</td><td>210</td></tr><tr><td>20/11/2021</td><td>196</td></tr><tr><td>21/11/2021</td><td>279</td></tr><tr><td>22/11/2021</td><td>282</td></tr><tr><td>23/11/2021</td><td>288</td></tr><tr><td>24/11/2021</td><td>253</td></tr><tr><td>25/11/2021</td><td>235</td></tr><tr><td>26/11/2021</td><td>194</td></tr><tr><td>27/11/2021</td><td>192</td></tr><tr><td>28/11/2021</td><td>283</td></tr><tr><td>29/11/2021</td><td>292</td></tr><tr><td>30/11/2021</td><td>266</td></tr><tr><td>01/12/2021</td><td>256</td></tr><tr><td>02/12/2021</td><td>228</td></tr><tr><td>03/12/2021</td><td>197</td></tr><tr><td>04/12/2021</td><td>181</td></tr><tr><td>05/12/2021</td><td>276</td></tr><tr><td>06/12/2021</td><td>257</td></tr><tr><td>07/12/2021</td><td>246</td></tr><tr><td>08/12/2021</td><td>242</td></tr><tr><td>09/12/2021</td><td>240</td></tr><tr><td>10/12/2021</td><td>192</td></tr><tr><td>11/12/2021</td><td>189</td></tr><tr><td>12/12/2021</td><td>257</td></tr><tr><td>13/12/2021</td><td>262</td></tr><tr><td>14/12/2021</td><td>248</td></tr><tr><td>15/12/2021</td><td>247</td></tr><tr><td>16/12/2021</td><td>208</td></tr><tr><td>17/12/2021</td><td>165</td></tr><tr><td>18/12/2021</td><td>136</td></tr><tr><td>19/12/2021</td><td>191</td></tr><tr><td>20/12/2021</td><td>228</td></tr><tr><td>21/12/2021</td><td>203</td></tr><tr><td>22/12/2021</td><td>186</td></tr><tr><td>23/12/2021</td><td>143</td></tr><tr><td>24/12/2021</td><td>116</td></tr><tr><td>25/12/2021</td><td>157</td></tr><tr><td>26/12/2021</td><td>244</td></tr><tr><td>27/12/2021</td><td>239</td></tr><tr><td>28/12/2021</td><td>233</td></tr><tr><td>29/12/2021</td><td>219</td></tr><tr><td>30/12/2021</td><td>150</td></tr><tr><td>31/12/2021</td><td>126</td></tr><tr><td>01/01/2022</td><td>177</td></tr><tr><td>02/01/2022</td><td>249</td></tr><tr><td>03/01/2022</td><td>248</td></tr><tr><td>04/01/2022</td><td>262</td></tr><tr><td>05/01/2022</td><td>242</td></tr><tr><td>06/01/2022</td><td>236</td></tr><tr><td>07/01/2022</td><td>198</td></tr><tr><td>08/01/2022</td><td>197</td></tr><tr><td>09/01/2022</td><td>265</td></tr><tr><td>10/01/2022</td><td>259</td></tr><tr><td>11/01/2022</td><td>278</td></tr><tr><td>12/01/2022</td><td>250</td></tr><tr><td>13/01/2022</td><td>237</td></tr><tr><td>14/01/2022</td><td>194</td></tr><tr><td>15/01/2022</td><td>199</td></tr><tr><td>16/01/2022</td><td>268</td></tr><tr><td>17/01/2022</td><td>256</td></tr><tr><td>18/01/2022</td><td>305</td></tr><tr><td>19/01/2022</td><td>282</td></tr><tr><td>20/01/2022</td><td>250</td></tr><tr><td>21/01/2022</td><td>195</td></tr><tr><td>22/01/2022</td><td>190</td></tr><tr><td>23/01/2022</td><td>268</td></tr><tr><td>24/01/2022</td><td>279</td></tr><tr><td>25/01/2022</td><td>293</td></tr><tr><td>26/01/2022</td><td>295</td></tr><tr><td>27/01/2022</td><td>284</td></tr><tr><td>28/01/2022</td><td>199</td></tr><tr><td>29/01/2022</td><td>196</td></tr><tr><td>30/01/2022</td><td>268</td></tr><tr><td>31/01/2022</td><td>243</td></tr><tr><td>01/02/2022</td><td>261</td></tr><tr><td>02/02/2022</td><td>264</td></tr><tr><td>03/02/2022</td><td>228</td></tr><tr><td>04/02/2022</td><td>199</td></tr><tr><td>05/02/2022</td><td>201</td></tr><tr><td>06/02/2022</td><td>234</td></tr><tr><td>07/02/2022</td><td>281</td></tr><tr><td>08/02/2022</td><td>261</td></tr><tr><td>09/02/2022</td><td>270</td></tr><tr><td>10/02/2022</td><td>247</td></tr><tr><td>11/02/2022</td><td>181</td></tr><tr><td>12/02/2022</td><td>199</td></tr><tr><td>13/02/2022</td><td>258</td></tr><tr><td>14/02/2022</td><td>252</td></tr><tr><td>15/02/2022</td><td>281</td></tr><tr><td>16/02/2022</td><td>254</td></tr><tr><td>17/02/2022</td><td>260</td></tr><tr><td>18/02/2022</td><td>220</td></tr><tr><td>19/02/2022</td><td>186</td></tr><tr><td>20/02/2022</td><td>262</td></tr><tr><td>21/02/2022</td><td>279</td></tr><tr><td>22/02/2022</td><td>260</td></tr><tr><td>23/02/2022</td><td>260</td></tr><tr><td>24/02/2022</td><td>214</td></tr><tr><td>25/02/2022</td><td>183</td></tr><tr><td>26/02/2022</td><td>172</td></tr><tr><td>27/02/2022</td><td>207</td></tr><tr><td>28/02/2022</td><td>246</td></tr><tr><td>01/03/2022</td><td>241</td></tr><tr><td>02/03/2022</td><td>271</td></tr><tr><td>03/03/2022</td><td>238</td></tr><tr><td>04/03/2022</td><td>171</td></tr><tr><td>05/03/2022</td><td>163</td></tr><tr><td>06/03/2022</td><td>219</td></tr><tr><td>07/03/2022</td><td>217</td></tr><tr><td>08/03/2022</td><td>231</td></tr></tbody></table></div></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 360px; left: 584px; white-space: nowrap; font-family: Arial; font-size: 12px;">2,000</div><div></div></div></div>
+				</div><!-- .theme-downloads -->
+			</div>
+
+			<div class="theme-meta">
+				<div class="theme-ratings">
+					<h3>Ratings</h3>
+
+					<a class="reviews-link" href="//wordpress.org/support/theme/rife-free/reviews/">See all</a>
+
+					
+					<div class="rating rating-100">
+						<span class="one"></span>
+						<span class="two"></span>
+						<span class="three"></span>
+						<span class="four"></span>
+						<span class="five"></span>
+						<p class="description"><span>5</span> out of 5 stars.</p>
+					</div>
+					
+
+					
+					<ul>
+												<li class="counter-container">
+							<a href="//wordpress.org/support/theme/rife-free/reviews/?filter=5" title="Click to see reviews that provided a rating of 5 stars">
+								<span class="counter-label">5 stars</span>
+								<span class="counter-back">
+									<span class="counter-bar" style="width: 96.27118644067797%;"></span>
+								</span>
+								<span class="counter-count">284</span>
+							</a>
+						</li>
+												<li class="counter-container">
+							<a href="//wordpress.org/support/theme/rife-free/reviews/?filter=4" title="Click to see reviews that provided a rating of 4 stars">
+								<span class="counter-label">4 stars</span>
+								<span class="counter-back">
+									<span class="counter-bar" style="width: 2.3728813559322033%;"></span>
+								</span>
+								<span class="counter-count">7</span>
+							</a>
+						</li>
+												<li class="counter-container">
+							<a href="//wordpress.org/support/theme/rife-free/reviews/?filter=3" title="Click to see reviews that provided a rating of 3 stars">
+								<span class="counter-label">3 stars</span>
+								<span class="counter-back">
+									<span class="counter-bar" style="width: 0.6779661016949152%;"></span>
+								</span>
+								<span class="counter-count">2</span>
+							</a>
+						</li>
+												<li class="counter-container">
+							<a href="//wordpress.org/support/theme/rife-free/reviews/?filter=2" title="Click to see reviews that provided a rating of 2 stars">
+								<span class="counter-label">2 stars</span>
+								<span class="counter-back">
+									<span class="counter-bar" style="width: 0%;"></span>
+								</span>
+								<span class="counter-count">0</span>
+							</a>
+						</li>
+												<li class="counter-container">
+							<a href="//wordpress.org/support/theme/rife-free/reviews/?filter=1" title="Click to see reviews that provided a rating of 1 star">
+								<span class="counter-label">1 star</span>
+								<span class="counter-back">
+									<span class="counter-bar" style="width: 0.6779661016949152%;"></span>
+								</span>
+								<span class="counter-count">2</span>
+							</a>
+						</li>
+											</ul>
+					
+
+					<a class="button button-secondary" href="https://wordpress.org/support/theme/rife-free/reviews/#new-post">Add my review</a>
+				</div><!-- .theme-rating -->
+
+				<div class="theme-support">
+					<h3>Support</h3>
+					<p>Got something to say? Need help?</p>
+					<a href="//wordpress.org/support/theme/rife-free" class="button button-secondary">View support forum</a>
+				</div><!-- .theme-support -->
+
+				<div class="theme-report">
+        				<h3>Report</h3>
+        				<p>Does this theme have major issues?</p>
+        				<a rel="nofollow" href="https://make.wordpress.org/themes/report-theme/?rep-name=false&amp;rep-theme=https://wordpress.org/themes/rife-free/&amp;rep-subject=Reported+Theme:+Rife Free" class="button button-secondary">Report this theme</a>
+				</div><!-- .theme-report -->
+
+				<div class="theme-translations">
+					<h3>Translations</h3>
+					<p>
+						<a href="https://translate.wordpress.org/projects/wp-themes/rife-free">
+							Translate Rife Free						</a>
+					</p>
+				</div><!-- .theme-translations -->
+
+				<div class="theme-devs">
+					<h3>Subscribe</h3>
+					<ul class="unmarked-list">
+						<li>
+							<a href="//themes.trac.wordpress.org/log/rife-free?limit=100&amp;mode=stop_on_copy&amp;format=rss">
+								<span class="dashicons dashicons-rss"></span>Development Log							</a>
+						</li>
+					</ul>
+
+					<h3>Browse the Code</h3>
+					<ul class="unmarked-list">
+						<li><a href="//themes.trac.wordpress.org/log/rife-free/" rel="nofollow">Development Log</a></li>
+						<li><a href="//themes.svn.wordpress.org/rife-free/" rel="nofollow">Subversion Repository</a></li>
+						<li><a href="//themes.trac.wordpress.org/browser/rife-free/" rel="nofollow">Browse in Trac</a></li>
+						<li><a href="//themes.trac.wordpress.org/query?keywords=~theme-rife-free" rel="nofollow">Trac Tickets</a></li>
+					</ul>
+				</div><!-- .theme-devs -->
+			</div>
+		</div>
+	</div>
+</div></div>
+		<span class="spinner"></span>
+	</main>
+
+	<aside class="theme-widget-area" role="complementary">
+	<div class="widget-wrap wrap">
+		<div class="widget widget_text">
+			<h2 class="widget-title">Add Your Theme</h2>
+			<div class="textwidget">The WordPress theme directory is used by millions of WordPress users all over the world. <a href="https://wordpress.org/themes/getting-started/">Submit your theme</a> to the official WordPress.org theme repository.			</div>
+		</div>
+		<div class="widget widget_text">
+			<h2 class="widget-title">Create a Theme</h2>
+			<div class="textwidget">Want to learn how to build a great theme? Read the <a href="https://developer.wordpress.org/themes/">Theme Developer Handbook</a> to learn everything about WordPress theme development.			</div>
+		</div>
+		<div class="widget widget_text">
+			<h2 class="widget-title">Stay Up-to-Date</h2>
+			<div class="textwidget">Trying to ensure a great experience for the theme authors and users, means that theme requirements change from time to time. Keep up with the latest changes by following the <a href="https://make.wordpress.org/themes/">Themes Team blog</a>.			</div>
+		</div>
+	</div>
+</aside>
+
+
+
+<footer class="wp-container-21 wp-block-group global-footer alignfull">
+	
+	<div class="wp-container-17 wp-block-group global-footer__navigation-container">
+		<nav class="wp-container-8 global-footer__navigation-important wp-block-navigation"><ul class="wp-block-navigation__container"><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/about/"><span class="wp-block-navigation-item__label">About</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/news/"><span class="wp-block-navigation-item__label">News</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/hosting/"><span class="wp-block-navigation-item__label">Hosting</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpressfoundation.org/donate/"><span class="wp-block-navigation-item__label">Donate</span></a></li></ul></nav>
+
+		<nav class="wp-container-10 global-footer__navigation-information wp-block-navigation"><ul class="wp-block-navigation__container"><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/support/"><span class="wp-block-navigation-item__label">Support</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://developer.wordpress.org/"><span class="wp-block-navigation-item__label">Developers</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://make.wordpress.org/"><span class="wp-block-navigation-item__label">Get Involved</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://learn.wordpress.org/"><span class="wp-block-navigation-item__label">Learn</span></a></li></ul></nav>
+
+		<nav class="wp-container-12 global-footer__navigation-resources wp-block-navigation"><ul class="wp-block-navigation__container"><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/showcase/"><span class="wp-block-navigation-item__label">Showcase</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/plugins/"><span class="wp-block-navigation-item__label">Plugins</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/themes/"><span class="wp-block-navigation-item__label">Themes</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/patterns/"><span class="wp-block-navigation-item__label">Patterns</span></a></li></ul></nav>
+
+		<nav class="wp-container-14 global-footer__navigation-community wp-block-navigation"><ul class="wp-block-navigation__container"><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://central.wordcamp.org/"><span class="wp-block-navigation-item__label">WordCamp</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.tv/"><span class="wp-block-navigation-item__label">WordPress.TV</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://buddypress.org/"><span class="wp-block-navigation-item__label">BuddyPress</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://bbpress.org/"><span class="wp-block-navigation-item__label">bbPress</span></a></li></ul></nav>
+
+		<nav class="wp-container-16 global-footer__navigation-external wp-block-navigation"><ul class="wp-block-navigation__container"><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.com/?ref=wporg-footer"><span class="wp-block-navigation-item__label">WordPress.com</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://ma.tt/"><span class="wp-block-navigation-item__label">Matt</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://wordpress.org/about/privacy/"><span class="wp-block-navigation-item__label">Privacy</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://publiccode.eu/"><span class="wp-block-navigation-item__label">Public Code</span></a></li></ul></nav>
+	</div> 
+
+	
+	<div class="wp-container-20 wp-block-group global-footer__logos-container">
+		
+		<div class="wp-container-18 wp-block-group">
+			
+			<!-- The design calls for two logos, a small "mark" on mobile/tablet, and the full logo for desktops. -->
+				<figure class="wp-block-image global-footer__wporg-logo-mark">
+					<a href="https://wordpress.org/">
+						<svg xmlns="http://www.w3.org/2000/svg" role="img" width="28" height="28" viewBox="0 0 28 28">
+	<title>WordPress.org</title>
+	<path fill="currentColor" d="M13.6052 0.923525C16.1432 0.923525 18.6137 1.67953 20.7062 3.09703C22.7447 4.47403 24.3512 6.41803 25.3097 8.68603C26.9837 12.6415 26.5382 17.164 24.1352 20.7145C22.7582 22.753 20.8142 24.3595 18.5462 25.318C14.5907 26.992 10.0682 26.5465 6.51772 24.1435C4.47922 22.7665 2.87272 20.8225 1.91422 18.5545C0.240225 14.599 0.685725 10.0765 3.08872 6.52603C4.46572 4.48753 6.40973 2.88103 8.67772 1.92253C10.2302 1.26103 11.9177 0.923525 13.6052 0.923525ZM13.6052 0.113525C6.15322 0.113525 0.105225 6.16153 0.105225 13.6135C0.105225 21.0655 6.15322 27.1135 13.6052 27.1135C21.0572 27.1135 27.1052 21.0655 27.1052 13.6135C27.1052 6.16153 21.0572 0.113525 13.6052 0.113525Z"></path>
+	<path fill="currentColor" d="M2.36011 13.6133C2.36011 17.9198 4.81711 21.8618 8.70511 23.7383L3.33211 9.03684C2.68411 10.4813 2.36011 12.0338 2.36011 13.6133ZM21.2061 13.0463C21.2061 11.6558 20.7066 10.6973 20.2746 9.94134C19.8426 9.18534 19.1676 8.22684 19.1676 7.30884C19.1676 6.39084 19.9506 5.31084 21.0576 5.31084H21.2061C16.6296 1.11234 9.51511 1.42284 5.31661 6.01284C4.91161 6.45834 4.53361 6.93084 4.20961 7.43034H4.93861C6.11311 7.43034 7.93561 7.28184 7.93561 7.28184C8.54311 7.24134 8.61061 8.13234 8.00311 8.21334C8.00311 8.21334 7.39561 8.28084 6.72061 8.32134L10.8111 20.5118L13.2681 13.1273L11.5131 8.32134C10.9056 8.28084 10.3386 8.21334 10.3386 8.21334C9.73111 8.17284 9.79861 7.25484 10.4061 7.28184C10.4061 7.28184 12.2691 7.43034 13.3626 7.43034C14.4561 7.43034 16.3596 7.28184 16.3596 7.28184C16.9671 7.24134 17.0346 8.13234 16.4271 8.21334C16.4271 8.21334 15.8196 8.28084 15.1446 8.32134L19.2081 20.4173L20.3691 16.7453C20.8821 15.1388 21.1926 14.0048 21.1926 13.0328L21.2061 13.0463ZM13.7946 14.5853L10.4196 24.3998C12.6876 25.0613 15.1041 25.0073 17.3316 24.2243L17.2506 24.0758L13.7946 14.5853ZM23.4741 8.21334C23.5281 8.59134 23.5551 8.98284 23.5551 9.37434C23.5551 10.5218 23.3391 11.8043 22.7046 13.3973L19.2621 23.3333C24.5271 20.2688 26.4036 13.5593 23.4741 8.21334Z"></path>
+</svg>					</a>
+				</figure>
+
+				<figure class="wp-block-image global-footer__wporg-logo-full">
+					<a href="https://wordpress.org/">
+						<svg xmlns="http://www.w3.org/2000/svg" role="img" width="329" height="52" viewBox="0 0 329 52">
+	<title>WordPress.org</title>
+	<path fill="currentColor" d="M4.33 26a21.68 21.68 0 0 0 12.22 19.5L6.21 17.18A21.66 21.66 0 0 0 4.33 26ZM26.38 27.89l-6.5 18.89a21.31 21.31 0 0 0 6.12.89 21.77 21.77 0 0 0 7.2-1.23 1.429 1.429 0 0 1-.16-.3l-6.66-18.25Z"></path>
+	<path fill="currentColor" d="M26 0a26 26 0 1 0 0 52 26 26 0 0 0 0-52Zm20.27 39.66a24.47 24.47 0 0 1-29.78 8.86 24.49 24.49 0 0 1-13-13 24.4 24.4 0 0 1 5.23-26.8 24.46 24.46 0 0 1 26.79-5.24 24.49 24.49 0 0 1 13 13 24.42 24.42 0 0 1-2.25 23.17l.01.01Z"></path>
+	<path fill="currentColor" d="M45 15.61c.103.736.153 1.477.15 2.22a20.38 20.38 0 0 1-1.65 7.76l-6.61 19.14A21.65 21.65 0 0 0 45 15.61ZM40.63 24.91a11.45 11.45 0 0 0-1.79-6c-1.1-1.78-2.13-3.29-2.13-5.08A3.76 3.76 0 0 1 40.35 10h.28A21.65 21.65 0 0 0 7.9 14.1h1.39c2.27 0 5.78-.27 5.78-.27a.9.9 0 0 1 .13 1.79s-1.17.13-2.47.2l7.88 23.47 4.75-14.22L22 15.84c-1.17-.07-2.27-.2-2.27-.2a.9.9 0 0 1 .14-1.79s3.57.27 5.7.27c2.13 0 5.78-.27 5.78-.27a.9.9 0 0 1 .14 1.79s-1.18.13-2.48.2l7.83 23.29 2.23-7.08a25.171 25.171 0 0 0 1.56-7.14ZM145.83 19.3h-10.34v1.1c3.23 0 3.75.69 3.75 4.79v7.4c0 4.1-.52 4.85-3.75 4.85-2.48-.35-4.16-1.68-6.47-4.22l-2.66-2.89c3.58-.63 5.49-2.89 5.49-5.43 0-3.18-2.72-5.6-7.8-5.6h-10.17v1.1c3.24 0 3.76.69 3.76 4.79v7.4c0 4.1-.52 4.85-3.76 4.85v1.1h11.5v-1.1c-3.24 0-3.76-.75-3.76-4.85v-2.08h1l6.42 8h16.81c8.26 0 11.85-4.39 11.85-9.65 0-5.26-3.61-9.56-11.87-9.56Zm-24.21 9.42V21H124a3.551 3.551 0 0 1 3.76 3.87 3.536 3.536 0 0 1-3.76 3.85h-2.38Zm24.38 8h-.4c-2.08 0-2.37-.52-2.37-3.18V21H146c6 0 7.11 4.39 7.11 7.8S152 36.75 146 36.75v-.03ZM93.49 13.52H82.62v1.16c3.7 0 4.22 1 3.07 4.39l-4 11.78L76 13.52h-1.1l-5.85 17.33-3.87-11.78c-1.22-3.59-.29-4.39 3.12-4.39v-1.16H55.47v1.16c3.35 0 4.28.86 5.66 5.08l6.42 19.76h.75l6-18.08 5.9 18.08h.8l6.59-19.76c1.44-4.22 2.31-5.08 5.95-5.08l-.05-1.16ZM101.34 18.55c-6.35 0-11.55 4.68-11.55 10.34s5.2 10.4 11.55 10.4c6.35 0 11.56-4.68 11.56-10.4 0-5.72-5.2-10.34-11.56-10.34Zm0 18.89c-5.31 0-7.16-4.74-7.16-8.55 0-3.81 1.85-8.55 7.16-8.55 5.31 0 7.23 4.79 7.23 8.55 0 3.76-1.85 8.55-7.23 8.55ZM170.67 13.52h-12v1.16c3.88 0 4.57.92 4.57 6.7v9.24c0 5.78-.69 6.76-4.57 6.76v1.16H172v-1.16c-3.88 0-4.57-1-4.57-6.76v-2.83h3.29c6 0 9.25-3.12 9.25-7.11s-3.35-7.16-9.3-7.16Zm0 12.13h-3.29v-10h3.29c3.24 0 4.74 2.31 4.74 5.08s-1.5 4.92-4.74 4.92ZM219.32 34.15c-.52 1.9-1.15 2.6-5.26 2.6h-.81c-3 0-3.52-.7-3.52-4.8v-2.66c4.51 0 4.85.41 4.85 3.41h1.1v-8.61h-1.1c0 3-.34 3.41-4.85 3.41V21h3.18c4.1 0 4.74.69 5.26 2.6l.28 1.1h.93l-.38-5.4h-17v1.1c3.23 0 3.75.69 3.75 4.79v7.4c0 3.75-.44 4.69-3 4.83-2.42-.37-4.09-1.69-6.37-4.2l-2.65-2.89c3.58-.63 5.49-2.89 5.49-5.43 0-3.18-2.72-5.6-7.8-5.6h-10.17v1.1c3.23 0 3.75.69 3.75 4.79v7.4c0 4.1-.52 4.85-3.75 4.85v1.1h11.49v-1.1c-3.23 0-3.75-.75-3.75-4.85v-2.08h1l6.41 8h23.75l.35-5.43h-.87l-.31 1.07ZM189 28.72V21h2.37a3.542 3.542 0 0 1 3.75 3.87 3.532 3.532 0 0 1-.998 2.77 3.532 3.532 0 0 1-2.752 1.05l-2.37.03ZM234.52 27.91l-3.18-1.56c-2.78-1.27-4-2.08-4-3.59 0-1.51 1.5-2.36 3.12-2.36 3.06 0 4.57 2.25 5 5h1.21v-6.85h-1.09a3.415 3.415 0 0 1-.75 1.56 7.25 7.25 0 0 0-4.51-1.5c-3.58 0-6.18 2.36-6.18 5.14 0 2.54 1.73 4.45 4 5.54l3.29 1.56c2.37 1.1 3.7 2.26 3.7 3.76 0 1.73-1.5 2.77-3.35 2.77-3.41 0-6.07-2.25-6.53-6.06h-1.15v8h1.09a4.194 4.194 0 0 1 .93-2 8.481 8.481 0 0 0 5.2 2c3.87 0 7-2.54 7-6.18.07-1.77-1.03-3.9-3.8-5.23ZM252 27.91l-3.18-1.56c-2.78-1.27-4-2.08-4-3.59 0-1.51 1.5-2.36 3.12-2.36 3.06 0 4.57 2.25 5 5h1.21v-6.85H253a3.415 3.415 0 0 1-.75 1.56 7.25 7.25 0 0 0-4.51-1.5c-3.58 0-6.18 2.36-6.18 5.14 0 2.54 1.73 4.45 4 5.54l3.29 1.56c2.37 1.1 3.7 2.26 3.7 3.76 0 1.73-1.5 2.77-3.35 2.77-3.41 0-6.07-2.25-6.53-6.06h-1.15v8h1.09a4.194 4.194 0 0 1 .93-2 8.481 8.481 0 0 0 5.2 2c3.87 0 7.05-2.54 7.05-6.18.07-1.77-1.03-3.9-3.79-5.23ZM277.56 18.75a10.481 10.481 0 0 0-10.68 10.17 10.47 10.47 0 0 0 10.68 10.16c5.9 0 10.71-4.58 10.71-10.16s-4.81-10.17-10.71-10.17Zm0 19c-5.52 0-7.63-4.91-7.63-8.88 0-3.97 2.07-8.87 7.63-8.87 5.56 0 7.66 4.94 7.66 8.92 0 3.98-2.11 8.88-7.66 8.88v-.05ZM301.71 33.79l-3.14-3.69c3.63-.38 5.71-2.59 5.71-5.38 0-3-2.44-5.42-6.89-5.42h-8.47v.7c2.66 0 3.05.51 3.05 3.72v10.39c0 3.21-.39 3.76-3.05 3.76v.67h8.66v-.67c-2.66 0-3.05-.55-3.05-3.76v-4H296l6.35 8.44h5.29v-.67c-1.88-.24-4.03-1.88-5.93-4.09ZM294.53 29v-8.52h2.82c2.79 0 4.08 1.93 4.08 4.24 0 2.31-1.29 4.28-4.08 4.28h-2.82ZM319.6 30.59v.64c2.21 0 3 .7 3 2.08 0 2.89-2.5 4.39-5.29 4.39-5.93 0-7.6-4.81-7.6-8.78 0-3.97 1.86-8.92 7-8.92 3.59 0 6.09 2.54 7 6.7h.64v-7h-.64a3.281 3.281 0 0 1-1.09 1.83 8.203 8.203 0 0 0-6-2.73 10.167 10.167 0 0 0-9.851 10.165 10.169 10.169 0 0 0 9.851 10.165c3.34 0 4.78-1.66 8.34-1.66V35c0-3.21.39-3.75 3.05-3.75v-.64l-8.41-.02ZM261.9 34.77a2.061 2.061 0 1 0 .288 4.112 2.061 2.061 0 0 0-.288-4.112Z"></path>
+</svg>					</a>
+				</figure>
+			
+
+					</div>
+		
+
+		
+		<ul class="wp-container-19 wp-block-social-links is-style-logos-only">
+			<li class="wp-social-link wp-social-link-facebook wp-block-social-link"><a href="https://www.facebook.com/WordPress/" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12 2C6.5 2 2 6.5 2 12c0 5 3.7 9.1 8.4 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7C18.3 21.1 22 17 22 12c0-5.5-4.5-10-10-10z"></path></svg><span class="wp-block-social-link-label screen-reader-text">Visit our Facebook page</span></a></li>
+			<li class="wp-social-link wp-social-link-twitter wp-block-social-link"><a href="https://twitter.com/WordPress" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M22.23,5.924c-0.736,0.326-1.527,0.547-2.357,0.646c0.847-0.508,1.498-1.312,1.804-2.27 c-0.793,0.47-1.671,0.812-2.606,0.996C18.324,4.498,17.257,4,16.077,4c-2.266,0-4.103,1.837-4.103,4.103 c0,0.322,0.036,0.635,0.106,0.935C8.67,8.867,5.647,7.234,3.623,4.751C3.27,5.357,3.067,6.062,3.067,6.814 c0,1.424,0.724,2.679,1.825,3.415c-0.673-0.021-1.305-0.206-1.859-0.513c0,0.017,0,0.034,0,0.052c0,1.988,1.414,3.647,3.292,4.023 c-0.344,0.094-0.707,0.144-1.081,0.144c-0.264,0-0.521-0.026-0.772-0.074c0.522,1.63,2.038,2.816,3.833,2.85 c-1.404,1.1-3.174,1.756-5.096,1.756c-0.331,0-0.658-0.019-0.979-0.057c1.816,1.164,3.973,1.843,6.29,1.843 c7.547,0,11.675-6.252,11.675-11.675c0-0.178-0.004-0.355-0.012-0.531C20.985,7.47,21.68,6.747,22.23,5.924z"></path></svg><span class="wp-block-social-link-label screen-reader-text">Visit our Twitter account</span></a></li>
+		</ul> 
+
+		
+		<figure class="wp-block-image is-resized global-footer__code_is_poetry">
+			<img src="https://s.w.org/style/images/code-is-poetry-for-dark-bg.svg" alt="Code is Poetry" width="188" height="13">
+		</figure> 
+	</div> 
+</footer> 
+<script id="tmpl-theme" type="text/template">
+	<a class="url" href="{{{ data.permalink }}}" rel="bookmark" tabindex="-1">
+		<# if ( data.screenshot_url ) { #>
+		<div class="theme-screenshot">
+			<img src="{{ data.screenshot_url }}?w=572&strip=all" loading="lazy" alt="" />
+		</div>
+		<# } else { #>
+		<div class="theme-screenshot blank"></div>
+		<# } #>
+		<span class="more-details">More Info</span>
+		<# if ( data.author.display_name ) { #>
+		<div class="theme-author">By <span class="author">{{ data.author.display_name }}</span></div>
+		<# } #>
+		<h3 class="theme-name entry-title">{{{ data.name }}}</h3>
+	</a>
+	<div class="theme-actions">
+		<a class="button button-primary preview install-theme-preview" href="{{ data.download_link }}">Download</a>
+	</div>
+</script>
+<script id="tmpl-theme-preview" type="text/template">
+	<div class="wp-full-overlay-sidebar">
+		<div class="wp-full-overlay-header">
+			<a href="#" class="close-full-overlay"><span class="screen-reader-text">Close</span></a>
+			<a href="#" class="previous-theme"><span class="screen-reader-text">Previous</span></a>
+			<a href="#" class="next-theme"><span class="screen-reader-text">Next</span></a>
+			<a href="//downloads.wordpress.org/theme/{{ data.slug }}.{{ data.version }}.zip" class="button button-primary theme-install">Download</a>
+		</div>
+		<div class="wp-full-overlay-sidebar-content">
+			<div class="install-theme-info">
+				<h3 class="theme-name">{{ data.name }}</h3>
+				<# if ( data.author.display_name ) { #>
+				<span class="theme-by">By {{ data.author.display_name }}</span>
+				<# } #>
+
+				<img class="theme-screenshot" src="{{ data.screenshot_url }}?w=520&strip=all" loading="lazy" alt="" />
+
+				<div class="theme-details">
+					<div class="rating rating-{{ Math.round( data.rating / 10 ) * 10 }}">
+						<span class="one"></span>
+						<span class="two"></span>
+						<span class="three"></span>
+						<span class="four"></span>
+						<span class="five"></span>
+
+						<# if ( data.num_ratings > 0 ) { #>
+						<small class="ratings">{{ data.rating_text }}</small>
+						<# } else { #>
+						<small class="ratings">No ratings.</small>
+						<# } #>
+					</div>
+					<div class="theme-version">Version: {{ data.version }}</div>
+					<div class="theme-description">{{{ data.description }}}</div>
+				</div>
+			</div>
+		</div>
+		<div class="wp-full-overlay-footer">
+			<a href="#" class="collapse-sidebar" title="Collapse Sidebar">
+				<span class="collapse-sidebar-label">Collapse</span>
+				<span class="collapse-sidebar-arrow"></span>
+			</a>
+		</div>
+	</div>
+	<div class="wp-full-overlay-main">
+		<iframe src="{{ data.preview_url }}" />
+	</div>
+</script>
+<script id="tmpl-theme-single" type="text/template">
+	<div class="theme-navigation">
+		<button class="close">Return to Themes List</button>
+		<div class="navigation post-navigation">
+			<button class="left dashicons dashicons-arrow-left-alt2"><span class="screen-reader-text">Show previous theme</span></button>
+			<button class="right dashicons dashicons-arrow-right-alt2"><span class="screen-reader-text">Show next theme</span></button>
+		</div>
+	</div>
+	<div class="theme-wrap">
+		<div class="theme-about hentry">
+			<# if ( data.is_outdated ) { #>
+			<div class="theme-notice notice notice-warning notice-alt">
+				<p>This theme <strong>hasn&#146;t been updated in over 2 years</strong>. It may no longer be maintained or supported and may have compatibility issues when used with more recent versions of WordPress.</p>
+			</div><!-- .theme-notice -->
+			<# } #>
+
+			<div>
+				<h2 class="theme-name entry-title">{{{ data.name }}}</h2>
+				<# if ( data.author.display_name ) { #>
+				<div class="theme-author">By <a href="{{{ data.path }}}author/{{ data.author.user_nicename }}/"><span class="author">{{{ data.author.display_name }}}</span></a></div>
+				<# } #>
+
+				<# if ( data.show_favorites && data.is_favorited ) { #>
+					<span class="dashicons dashicons-heart favorite favorited"></span>
+				<# } else if ( data.show_favorites ) { #>
+					<span class="dashicons dashicons-heart favorite"></span>
+				<# } #>
+			</div>
+
+			<div class="theme-head">
+				<div class="theme-actions clear">
+					<a href="{{{ data.preview_url }}}" class="button button-secondary alignleft">Preview</a>
+					<a href="{{ data.download_link }}" class="button button-primary alignright">Download</a>
+				</div>
+
+				<# if ( data.parent ) { #>
+				<div class="theme-notice notice notice-info notice-alt">
+					<p class="parent">This is a child theme of <a href="{{{ data.path }}}{{{ data.parent.slug }}}/">{{{ data.parent.name }}}</a>.</p>
+				</div>
+				<# } #>
+
+				<div class="theme-meta-info">
+					<p class="version">Version: <strong>{{ data.version }}</strong></p>
+					<p class="updated">Last updated: <strong>{{ data.last_updated }}</strong></p>
+					<p class="active_installs">Active Installations: <strong>{{ data.active_installs }}</strong></p>
+					<# if ( data.requires ) { #>
+					<p class="requires">WordPress Version: <strong>{{ data.requires }} or higher</strong></p>
+					<# } #>
+					<# if ( data.requires_php ) { #>
+					<p class="requires_php">PHP Version: <strong>{{ data.requires_php }} or higher</strong></p>
+					<# } #>
+					<# if ( data.theme_url ) { #>
+					<p class="theme_homepage"><a href="{{ data.theme_url }}">Theme Homepage</a></p>
+					<# } #>
+				</div>
+			</div><!-- .theme-head -->
+
+			<div class="theme-info">
+				<# if ( data.screenshot_url ) { #>
+				<div class="screenshot">
+					<picture>
+						<source media="(min-width: 782px)" srcset="{{ data.screenshot_url }}?w=572&strip=all, {{ data.screenshot_url }}?w=1144&strip=all 2x">
+						<source media="(min-width: 481px) and (max-width: 782px)" srcset="{{ data.screenshot_url }}?w=700&strip=all, {{ data.screenshot_url }}?w=1400&strip=all 2x">
+						<source media="(min-width: 401px) and (max-width: 480px)" srcset="{{ data.screenshot_url }}?w=420&strip=all, {{ data.screenshot_url }}?w=840&strip=all 2x">
+						<source media="(max-width: 400px)" srcset="{{ data.screenshot_url }}?w=344&strip=all, {{ data.screenshot_url }}?w=688&strip=all 2x">
+						<img src="{{ data.screenshot_url }}?w=572&strip=all" srcset="{{ data.screenshot_url }}?w=1144&strip=all 2x" loading="lazy" alt="">
+					</picture>
+				</div>
+				<# } else { #>
+				<div class="screenshot blank"></div>
+				<# } #>
+
+				<div class="theme-description entry-summary"><p>{{{ data.description }}}</p></div>
+
+				<# if ( data.tags ) { #>
+				<div class="theme-tags">
+					<h3>Tags:</h3>
+					{{{ data.tags }}}
+				</div><!-- .theme-tags -->
+				<# } #>
+
+				<div class="theme-downloads">
+					<h3>Downloads Per Day</h3>
+					<div id="theme-download-stats-{{data.id}}" class="chart"></div>
+				</div><!-- .theme-downloads -->
+			</div>
+
+			<div class="theme-meta">
+				<div class="theme-ratings">
+					<h3>Ratings</h3>
+
+					<a class="reviews-link" href="//wordpress.org/support/theme/{{ data.id }}/reviews/">See all</a>
+
+					<# if ( data.rating ) { #>
+					<div class="rating rating-{{ Math.round( data.rating / 10 ) * 10 }}">
+						<span class="one"></span>
+						<span class="two"></span>
+						<span class="three"></span>
+						<span class="four"></span>
+						<span class="five"></span>
+						<p class="description"><span>{{ Math.round( data.rating / 20 / 0.5 )*0.5 }}</span> out of 5 stars.</p>
+					</div>
+					<# } else { #>
+					<div class="rating">
+						<div class="ratings">This theme has not been rated yet.</div>
+					</div>
+					<# } #>
+
+					<# if ( data.ratings ) { #>
+					<ul>
+												<li class="counter-container">
+							<a href="//wordpress.org/support/theme/{{ data.id }}/reviews/?filter=5" title="Click to see reviews that provided a rating of 5 stars">
+								<span class="counter-label">5 stars</span>
+								<span class="counter-back">
+									<span class="counter-bar" style="width: {{ 100 * data.ratings[5] / data.num_ratings }}%;"></span>
+								</span>
+								<span class="counter-count">{{ data.ratings[5] }}</span>
+							</a>
+						</li>
+												<li class="counter-container">
+							<a href="//wordpress.org/support/theme/{{ data.id }}/reviews/?filter=4" title="Click to see reviews that provided a rating of 4 stars">
+								<span class="counter-label">4 stars</span>
+								<span class="counter-back">
+									<span class="counter-bar" style="width: {{ 100 * data.ratings[4] / data.num_ratings }}%;"></span>
+								</span>
+								<span class="counter-count">{{ data.ratings[4] }}</span>
+							</a>
+						</li>
+												<li class="counter-container">
+							<a href="//wordpress.org/support/theme/{{ data.id }}/reviews/?filter=3" title="Click to see reviews that provided a rating of 3 stars">
+								<span class="counter-label">3 stars</span>
+								<span class="counter-back">
+									<span class="counter-bar" style="width: {{ 100 * data.ratings[3] / data.num_ratings }}%;"></span>
+								</span>
+								<span class="counter-count">{{ data.ratings[3] }}</span>
+							</a>
+						</li>
+												<li class="counter-container">
+							<a href="//wordpress.org/support/theme/{{ data.id }}/reviews/?filter=2" title="Click to see reviews that provided a rating of 2 stars">
+								<span class="counter-label">2 stars</span>
+								<span class="counter-back">
+									<span class="counter-bar" style="width: {{ 100 * data.ratings[2] / data.num_ratings }}%;"></span>
+								</span>
+								<span class="counter-count">{{ data.ratings[2] }}</span>
+							</a>
+						</li>
+												<li class="counter-container">
+							<a href="//wordpress.org/support/theme/{{ data.id }}/reviews/?filter=1" title="Click to see reviews that provided a rating of 1 star">
+								<span class="counter-label">1 star</span>
+								<span class="counter-back">
+									<span class="counter-bar" style="width: {{ 100 * data.ratings[1] / data.num_ratings }}%;"></span>
+								</span>
+								<span class="counter-count">{{ data.ratings[1] }}</span>
+							</a>
+						</li>
+											</ul>
+					<# } #>
+
+					<a class="button button-secondary" href="https://wordpress.org/support/theme/{{ data.id }}/reviews/#new-post">Add my review</a>
+				</div><!-- .theme-rating -->
+
+				<div class="theme-support">
+					<h3>Support</h3>
+					<p>Got something to say? Need help?</p>
+					<a href="//wordpress.org/support/theme/{{ data.slug }}" class="button button-secondary">View support forum</a>
+				</div><!-- .theme-support -->
+
+				<div class="theme-report">
+        				<h3>Report</h3>
+        				<p>Does this theme have major issues?</p>
+        				<a rel="nofollow" href="https://make.wordpress.org/themes/report-theme/?rep-name={{ data.current_user }}&rep-theme={{ data.homepage }}&rep-subject=Reported+Theme:+{{ data.name }}" class="button button-secondary">Report this theme</a>
+				</div><!-- .theme-report -->
+
+				<div class="theme-translations">
+					<h3>Translations</h3>
+					<p>
+						<a href="https://translate.wordpress.org/projects/wp-themes/{{ data.slug }}">
+							Translate {{ data.name }}						</a>
+					</p>
+				</div><!-- .theme-translations -->
+
+				<div class="theme-devs">
+					<h3>Subscribe</h3>
+					<ul class="unmarked-list">
+						<li>
+							<a href="//themes.trac.wordpress.org/log/{{data.id}}?limit=100&mode=stop_on_copy&format=rss">
+								<span class="dashicons dashicons-rss"></span>Development Log							</a>
+						</li>
+					</ul>
+
+					<h3>Browse the Code</h3>
+					<ul class="unmarked-list">
+						<li><a href="//themes.trac.wordpress.org/log/{{data.id}}/" rel="nofollow">Development Log</a></li>
+						<li><a href="//themes.svn.wordpress.org/{{data.id}}/" rel="nofollow">Subversion Repository</a></li>
+						<li><a href="//themes.trac.wordpress.org/browser/{{data.id}}/" rel="nofollow">Browse in Trac</a></li>
+						<li><a href="//themes.trac.wordpress.org/query?keywords=~theme-{{data.id}}" rel="nofollow">Trac Tickets</a></li>
+					</ul>
+				</div><!-- .theme-devs -->
+			</div>
+		</div>
+	</div>
+</script>
+<style>.wp-container-2 {display: flex;gap: 0.5em;flex-wrap: wrap;align-items: center;}.wp-container-2 > * { margin: 0; }</style>
+<style>.wp-container-4 {display: flex;gap: 0.5em;flex-wrap: wrap;align-items: center;}.wp-container-4 > * { margin: 0; }</style>
+<style>.wp-container-5 .alignleft { float: left; margin-right: 2em; margin-left: 0; }.wp-container-5 .alignright { float: right; margin-left: 2em; margin-right: 0; }</style>
+<style>.wp-container-6 .alignleft { float: left; margin-right: 2em; margin-left: 0; }.wp-container-6 .alignright { float: right; margin-left: 2em; margin-right: 0; }</style>
+<style>.wp-container-8 {display: flex;gap: 0.5em;flex-wrap: wrap;align-items: center;}.wp-container-8 > * { margin: 0; }</style>
+<style>.wp-container-10 {display: flex;gap: 0.5em;flex-wrap: wrap;align-items: center;}.wp-container-10 > * { margin: 0; }</style>
+<style>.wp-container-12 {display: flex;gap: 0.5em;flex-wrap: wrap;align-items: center;}.wp-container-12 > * { margin: 0; }</style>
+<style>.wp-container-14 {display: flex;gap: 0.5em;flex-wrap: wrap;align-items: center;}.wp-container-14 > * { margin: 0; }</style>
+<style>.wp-container-16 {display: flex;gap: 0.5em;flex-wrap: wrap;align-items: center;}.wp-container-16 > * { margin: 0; }</style>
+<style>.wp-container-17 .alignleft { float: left; margin-right: 2em; margin-left: 0; }.wp-container-17 .alignright { float: right; margin-left: 2em; margin-right: 0; }</style>
+<style>.wp-container-18 {display: flex;gap: 0.5em;flex-wrap: wrap;align-items: center;justify-content: flex-start;}.wp-container-18 > * { margin: 0; }</style>
+<style>.wp-container-19 {display: flex;gap: 0.5em;flex-wrap: wrap;align-items: center;}.wp-container-19 > * { margin: 0; }</style>
+<style>.wp-container-20 .alignleft { float: left; margin-right: 2em; margin-left: 0; }.wp-container-20 .alignright { float: right; margin-left: 2em; margin-right: 0; }</style>
+<style>.wp-container-21 .alignleft { float: left; margin-right: 2em; margin-left: 0; }.wp-container-21 .alignright { float: right; margin-left: 2em; margin-right: 0; }</style>
+<script type="text/javascript" id="wporg-theme-js-extra">
+/* <![CDATA[ */
+var _wpThemeSettings = {"themes":"","query":{"themes":[{"name":"Rife Free","slug":"rife-free","version":"2.4.13","preview_url":"https:\/\/wp-themes.com\/rife-free\/","author":{"user_nicename":"apollo13themes","profile":"https:\/\/profiles.wordpress.org\/apollo13themes\/","avatar":"https:\/\/secure.gravatar.com\/avatar\/ce901f4345ce15a16c65d6edfb072370?s=96&d=monsterid&r=g","display_name":"apollo13themes","author":"Apollo13Themes","author_url":"https:\/\/apollo13themes.com\/"},"screenshot_url":"https:\/\/i0.wp.com\/themes.svn.wordpress.org\/rife-free\/2.4.13\/screenshot.png","theme_url":"https:\/\/apollo13themes.com\/rife\/free\/","ratings":{"1":2,"2":0,"3":2,"4":7,"5":284},"rating":98,"num_ratings":295,"active_installs":30000,"last_updated":"2021-09-02","last_updated_time":"2021-09-02 14:30:01","homepage":"https:\/\/wordpress.org\/themes\/rife-free\/","description":"Rife Free is a great portfolio and photography WP theme with 7 ready-to-use demo layouts. It is also perfect for business, blogging websites and for your shop because it is WooCommerce compatible. More cool features in the Rife theme are the: &#10003; Writing Effect &#10003; One Page Mode &#10003; Mobile\/Touch Friendly Image &amp; Video Slider &#10003; Bricks Gallery for Photographers &#10003; Mega Menu &#10003; Post Grid &#10003; Google Fonts &#10003; Hidden Sidebar and many more. Over 450 options to change in the Customizer and much more in each page, post, album or work. We also integrate Schema.org which helps your website be more visible to search engines. Elementor compatibility will help you make your great website even more natural. The theme is RTL and translation-ready (WPML). &#9733; Check our demos for more details: https:\/\/apollo13themes.com\/rife\/designs\/","download_link":"https:\/\/downloads.wordpress.org\/theme\/rife-free.2.4.13.zip","tags":{"custom-colors":"Custom Colors","custom-menu":"Custom Menu","e-commerce":"E-Commerce","featured-images":"Featured Images","footer-widgets":"Footer Widgets","full-width-template":"Full Width Template","grid-layout":"Grid Layout","left-sidebar":"Left Sidebar","photography":"Photography","portfolio":"Portfolio","post-formats":"Post Formats","right-sidebar":"Right Sidebar","rtl-language-support":"RTL Language Support","sticky-post":"Sticky Post","theme-options":"Theme Options","threaded-comments":"Threaded Comments","three-columns":"Three Columns","translation-ready":"Translation Ready","two-columns":"Two Columns"},"requires":"4.7","requires_php":"5.3.0"}],"request":{"theme":"rife-free"},"total":1,"pages":1},"settings":{"title":{"default":"%s &#124; WordPress.org","home":"WordPress Themes &#124; WordPress.org","theme":"%s - WordPress theme &#124; WordPress.org","author":"Themes by %s &#124; WordPress.org","tax":"WordPress Themes: %s Free &#124; WordPress.org","search":"Search Results for &#8220;%s&#8221; &#124; WordPress.org","notfound":"Page not found &#124; WordPress.org"},"isMobile":false,"postsPerPage":"12","path":"\/themes\/","locale":"en_US","favorites":{"api":"https:\/\/api.wordpress.org\/themes\/theme-directory\/1.0\/","themes":[],"user":false,"nonce":false},"browseDefault":"popular","apiEndpoint":"https:\/\/api.wordpress.org\/themes\/info\/1.2\/"},"l10n":{"locale":"en-US","search":"Search Themes","searchPlaceholder":"Search themes...","error":"An unexpected error occurred.","date":"Date","downloads":"Downloads","tags":{"grid-layout":"Grid Layout","one-column":"One Column","two-columns":"Two Columns","three-columns":"Three Columns","four-columns":"Four Columns","left-sidebar":"Left Sidebar","right-sidebar":"Right Sidebar","wide-blocks":"Wide Blocks","fixed-layout":"Fixed Layout","fluid-layout":"Fluid Layout","responsive-layout":"Responsive Layout","accessibility-ready":"Accessibility Ready","block-patterns":"Block Editor Patterns","block-styles":"Block Editor Styles","buddypress":"BuddyPress","custom-background":"Custom Background","custom-colors":"Custom Colors","custom-header":"Custom Header","custom-logo":"Custom Logo","custom-menu":"Custom Menu","editor-style":"Editor Style","featured-image-header":"Featured Image Header","featured-images":"Featured Images","flexible-header":"Flexible Header","footer-widgets":"Footer Widgets","front-page-post-form":"Front Page Posting","full-site-editing":"Full Site Editing","full-width-template":"Full Width Template","microformats":"Microformats","post-formats":"Post Formats","rtl-language-support":"RTL Language Support","sticky-post":"Sticky Post","template-editing":"Template Editing","theme-options":"Theme Options","threaded-comments":"Threaded Comments","translation-ready":"Translation Ready","blavatar":"Blavatar","blog":"Blog","e-commerce":"E-Commerce","education":"Education","entertainment":"Entertainment","food-and-drink":"Food & Drink","holiday":"Holiday","news":"News","photography":"Photography","portfolio":"Portfolio","photoblogging":"Photoblogging","seasonal":"Seasonal","black":"Black","blue":"Blue","brown":"Brown","gray":"Gray","green":"Green","orange":"Orange","pink":"Pink","purple":"Purple","red":"Red","silver":"Silver","tan":"Tan","white":"White","yellow":"Yellow","dark":"Dark","light":"Light"},"active_installs_less_than_10":"Less than 10","active_installs_1_million":"1+ million"}};
+/* ]]> */
+</script>
+<script type="text/javascript" id="wporg-global-header-script-js-extra">
+/* <![CDATA[ */
+var wporgGlobalHeaderI18n = {"openSearchLabel":"Open Search","closeSearchLabel":"Close Search"};
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/themes\/wp-admin\/admin-ajax.php"}};/* ]]> */
+</script>
+<script type="text/javascript" src="https://wordpress.org/themes/wp-admin/load-scripts.php?c=0&amp;load%5Bchunk_0%5D=hoverintent-js,admin-bar,underscore,backbone,wp-util,wp-backbone&amp;ver=6.0-alpha-52833"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js" id="google-charts-loader-js"></script>
+<script type="text/javascript" src="https://wordpress.org/themes/wp-content/themes/pub/wporg-themes/js/theme.min.js?ver=20210303" id="wporg-theme-js"></script>
+<script type="text/javascript" src="https://wordpress.org/themes/wp-content/mu-plugins/pub-sync/blocks/global-header-footer/js/wporg-global-header-script.js?ver=1646690150" id="wporg-global-header-script-js"></script>
+<script src="https://stats.wp.com/e-202210.js" defer=""></script>
+<script>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:10.2.1',blog:'88381900',post:'17938',tz:'0',srv:'wordpress.org'} ]);
+	_stq.push([ 'clickTrackerInit', '88381900', '17938' ]);
+</script>
+
+	
+
+<img src="https://pixel.wp.com/g.gif?v=ext&amp;j=1%3A10.2.1&amp;blog=88381900&amp;post=17938&amp;tz=0&amp;srv=wordpress.org&amp;host=wordpress.org&amp;ref=&amp;fcp=961&amp;rand=0.03096263833692281" alt="" width="6" height="5" id="wpstats"></body></html>
